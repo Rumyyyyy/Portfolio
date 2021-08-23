@@ -1,0 +1,24 @@
+/* ?header */
+
+header{
+    padding-top: 70px;
+}
+
+header h1{
+    text-align: center; 
+}
+
+header ul::after{
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+header ul li{
+    float: left;
+}
+
+header nav{
+    float: left;
+}
