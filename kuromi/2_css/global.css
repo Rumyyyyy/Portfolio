@@ -1,5 +1,11 @@
 /* ?header */
 
+header::after{
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
 header{
     padding-top: 70px;
 }
@@ -21,4 +27,6 @@ header ul li{
 
 header nav{
     float: left;
+    border-top: ;
+    border-bottom: ;
 }
