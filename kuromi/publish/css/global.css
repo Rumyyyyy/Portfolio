@@ -1,0 +1,32 @@
+/* ?header */
+
+header::after{
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+header{
+    padding-top: 70px;
+}
+
+header h1{
+    text-align: center; 
+}
+
+header ul::after{
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+header ul li{
+    float: left;
+}
+
+header nav{
+    float: left;
+    border-top: #c9c7ca 1px solid;
+    border-bottom: #c9c7ca 1px solid;
+}
