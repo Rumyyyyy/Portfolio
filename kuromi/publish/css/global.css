@@ -4,10 +4,13 @@ a{text-decoration: none;}
 
 header{
     position: relative;
+    padding: 70px 0 0 0;
 }
 
 header h1{
     position: absolute;
+    top: 70px;
+    left: calc(960px - 25%);
 }
 
 header > ul::after{
@@ -17,11 +20,9 @@ header > ul::after{
     clear: both;
 }
 
-header > ul li{
-    float: left;
-}
 header > ul li:nth-of-type(n - 3){
     float: left;
+    padding: 70px 0 0 0;
 }
 header > ul li:nth-of-type(n + 4){
     float: right;
