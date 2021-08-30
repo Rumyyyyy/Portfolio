@@ -1,32 +1,67 @@
+a{text-decoration: none;}
+
 /* ?header */
 
-header::after{
-    content: '';
-    display: block;
-    visibility: hidden;
-    clear: both;
-}
 header{
-    padding-top: 70px;
+    position: relative;
 }
 
 header h1{
-    text-align: center; 
+    position: absolute;
 }
 
-header ul::after{
+header > ul::after{
     content: '';
-    display: block;
     visibility: hidden;
+    display: block;
     clear: both;
 }
 
-header ul li{
+header > ul li{
     float: left;
+}
+header > ul li:nth-of-type(n - 3){
+    float: left;
+}
+header > ul li:nth-of-type(n + 4){
+    float: right;
+}
+
+header > ul li > a > span ~ div{
+    display: none;
+}
+
+header h1 ~ ul li a{
+    color: #c9c7ca;
 }
 
 header nav{
+    border-top: solid 1px #c9c7ca; 
+    border-bottom: solid 1px #c9c7ca;
+}
+
+header nav ul::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+header nav > ul li{
     float: left;
-    border-top: #c9c7ca 1px solid;
-    border-bottom: #c9c7ca 1px solid;
+}
+header nav > ul li:last-of-type{
+    float: right;
+}
+
+header nav ul li a{
+    color: #878589
+}
+
+header nav ul li a span.material-icons{
+    color: #6b696c;
+}
+
+header nav ul li ul li{
+    display: none;
 }
