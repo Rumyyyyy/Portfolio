@@ -1,4 +1,10 @@
-/* ?first section */
+/* ?slider */
+
+div.bx-wrapper{
+    margin-bottom: 105px;
+}
+
+/* ?main section */
 
 section.main_content h2{
     text-align: center;
