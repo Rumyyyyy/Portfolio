@@ -1,7 +1,11 @@
 a{text-decoration: none;}
 
 /* *font light */
-/* font-family: 'MaplestoryOTFLight'; */
+section.main_content{
+    font-family: 'MaplestoryOTFLight';
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* *font bold */
 header > ul > li > a,
@@ -128,4 +132,3 @@ header nav ul li ul li{
     display: none;
 }
 
-/* ?footer */

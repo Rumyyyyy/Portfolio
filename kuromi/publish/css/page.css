@@ -1,28 +1,52 @@
 /* ?first section */
 
-section h2{
+section.main_content h2{
     text-align: center;
     color: #d135ff;
     font-size: 48px;
     margin-bottom: 100px;
 }
 
-section div{
+section.main_content div{
     margin: 0 auto;
 }
 
-section ul::after{
+section.main_content div ul::after{
     content: '';
     visibility: hidden;
     display: block;
     clear: both;
 }
-
-section ul li{
-    float: left;
-    text-align: center;
+section.main_content div ul{
+    max-width: 1195px;
+    margin: 0 auto;
 }
 
-section ul li a img{
+section.main_content div ul li{
     max-width: 345px;
+    float: left;
+    text-align: center;
+    margin-right: 6.6%;
+}
+section.main_content div ul li:nth-of-type(3){
+    margin: 0;
+}
+
+section.main_content div ul li a img{
+    max-width: 345px;
+}
+
+section.main_content div ul li  a span{
+    display: block;
+    text-align: right;
+}
+
+section.main_content div ul li a p{
+    font-size: 18px;
+}
+section.main_content div ul li a p:first-of-type{
+    color: #716d73;
+}
+section.main_content div ul li a p:last-of-type{
+    color: #000;
 }
