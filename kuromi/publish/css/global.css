@@ -10,7 +10,8 @@ section.main_content{
 /* *font bold */
 header > ul > li > a,
 header nav > ul li,
-section h2{
+section.main_content h2,
+footer ul li h3{
     font-family: 'MaplestoryOTFBold';
     font-weight: normal;
     font-style: normal;
@@ -149,3 +150,7 @@ footer ul{
     display: flex;
 }
 
+footer ul li h3{
+    font-size: 16px;
+    color: #464348;
+}
