@@ -2,7 +2,7 @@ a{text-decoration: none;}
 
 /* *font light */
 section.main_content,
-footer ul li:first-of-type p{
+footer ul li p{
     font-family: 'MaplestoryOTFLight';
     font-weight: normal;
     font-style: normal;
@@ -162,9 +162,15 @@ footer ul li strong a{
     display: block;
     font-size: 16px;
     color: #000;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
-footer ul li:first-of-type p{
+footer ul li p{
+    font-size: 16px;
     color: #464348;
+}
+
+footer ul li:first-of-type p:first-of-type{
+    line-height: 20px;
+    margin-bottom: 10px;
 }
