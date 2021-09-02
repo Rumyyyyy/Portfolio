@@ -11,7 +11,8 @@ section.main_content{
 header > ul > li > a,
 header nav > ul li,
 section.main_content h2,
-footer ul li h3{
+footer ul li h3,
+footer ul li strong a{
     font-family: 'MaplestoryOTFBold';
     font-weight: normal;
     font-style: normal;
@@ -153,4 +154,11 @@ footer ul{
 footer ul li h3{
     font-size: 16px;
     color: #464348;
+    margin-bottom: 30px;
+}
+
+footer ul li strong a{
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 25px;
 }
