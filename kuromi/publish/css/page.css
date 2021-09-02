@@ -43,6 +43,10 @@ section.main_content div ul li:nth-of-type(3n){
 section.main_content:first-of-type div ul li:last-child{
     margin-bottom: 110px;
 }
+section.main_content div ul li:nth-of-type(n + 4){
+    display: none;
+}
+/* 그 넘어가는 슬라이드 같이 만들 건데 3개 까지만 나와야대서 잠깐 지움 */
 
 section.main_content div ul li a img{
     max-width: 345px;
