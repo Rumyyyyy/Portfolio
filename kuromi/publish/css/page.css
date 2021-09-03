@@ -3,8 +3,30 @@
 div.bx-wrapper{
     height: 660px;
     margin-bottom: 105px;
+    position: relative;
     border: 0;
     border-bottom: 45px #e2d0f4 solid;
+}
+
+div.bx-wrapper .bx-prev{
+    background: url('../../img/lt_.png') no-repeat;
+}
+
+div.bx-wrapper .bx-controls-direction a{
+    width: 30px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+}
+div.bx-wrapper .bx-controls-direction a:first-of-type{
+    left: 6.25%;
+}
+div.bx-wrapper .bx-controls-direction a:last-of-type{
+    right: 6.25%;
+}
+
+div.bx-wrapper .bx-next{
+    background: url('../../img/gt_ .png') no-repeat;
 }
 
 /* ?main section */
