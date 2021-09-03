@@ -3,7 +3,8 @@ a{text-decoration: none;}
 /* *font light */
 section.main_content,
 footer ul li p,
-footer ul li a{
+footer ul li a,
+header nav > ul li{
     font-family: 'MaplestoryOTFLight';
     font-weight: normal;
     font-style: normal;
@@ -117,10 +118,6 @@ header nav > ul li:last-of-type{
 header nav > ul li:nth-last-of-type(2){
     margin: 0px;
 }
-header nav > ul li:hover ul li{
-    display: inline-block;
-}
-/* 모든 ul li가 한 번에 다 나왓으면 좋겟는데 그렇게 안 나옴 */
 
 header nav ul li a{
     position: relative;
@@ -138,6 +135,15 @@ header nav ul li a span.material-icons{
 
 header nav ul li ul li{
     display: none;
+    color: #878589;
+    font-size: 14px;
+}
+header nav > ul li:hover ul li{
+    display: flex;
+}
+/* 모든 ul li가 한 번에 다 나왓으면 좋겟는데 그렇게 안 나옴 */
+header nav > ul li:hover ul li a:hover{
+    color: #000;
 }
 
 /* ?footer */
