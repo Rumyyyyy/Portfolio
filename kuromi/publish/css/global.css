@@ -101,13 +101,13 @@ header nav ul::after{
     clear: both;
 }
 
-header nav > ul li{
+header nav > ul > li{
     float: left;
     margin-right: 25px;
     line-height: 45px;
     font-size: 18px;
 }
-header nav > ul li:first-of-type{
+header nav > ul > li:first-of-type{
     margin-left: 15.1%;
 }
 header nav > ul > li:last-of-type{
@@ -116,22 +116,22 @@ header nav > ul > li:last-of-type{
     /* 고객센터의 그 아이콘이 자꾸 지 멋대로 돌아다님 이것도 포지션 써야댐??
     포지션 쓰면 a로 relative 잡아야대는디 근데 그럼 위치를 어케 정해줘야댐? */
 }
-header nav > ul li:nth-last-of-type(2){
+header nav > ul > li:nth-last-of-type(2){
     margin: 0px;
 }
 
-header nav ul li a{
+header nav > ul > li a{
     position: relative;
     color: #878589
 }
-header nav ul li a:hover{
+header nav > ul > li a:hover{
     color: #645772;
     /* border-top: #645772;
     border-bottom: #645772; */
     /* nav한테 보더가 있는데 얘네 호버하면 얘네 범위만 보더 색이 바뀌게 해야댐 */
 }
 
-header nav ul li a span.material-icons{
+header nav > ul > li a span.material-icons{
     position: absolute;
     left: -50%;
     color: #6b696c;
@@ -140,18 +140,19 @@ header nav ul li a span.material-icons{
     line-height: 45px;
 }
 
-header nav ul li ul li{
+header nav > ul > li > ul > li{
     display: none;
     color: #878589;
     font-size: 14px;
 }
 
-header nav > ul li:hover ul li{
+header nav > ul > li:hover ul li{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 /* 모든 ul li가 한 번에 다 나왓으면 좋겟는데 그렇게 안 나옴 */
-header nav > ul li:hover ul li a:hover{
+header nav > ul > li:hover ul li a:hover{
     color: #000;
 }
 
