@@ -73,6 +73,8 @@ header > ul > li span{
     position: absolute;
     top: 0;
     left: calc(50% - 42.5px);
+
+    이거 수정하기
 }
 
 header > ul li > a > span ~ div{
