@@ -9,7 +9,7 @@ div.bx-wrapper{
 }
 
 div.bx-wrapper .bx-prev{
-    background: url('../../img/lt_.png') no-repeat;
+    background: url('../../img/lt_.png') no-repeat center;
 }
 
 div.bx-wrapper .bx-controls-direction a{
@@ -26,9 +26,13 @@ div.bx-wrapper .bx-controls-direction a:last-of-type{
 }
 
 div.bx-wrapper .bx-next{
-    background: url('../../img/gt_ .png') no-repeat;
+    background: url('../../img/gt_ .png') no-repeat center;
 }
-/* 배너 오른쪽 화살표가 자꾸 마우스 올리면 사라짐 */
+div.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus{
+    background-position: center;
+}
+/* 배너 오른쪽 화살표가 자꾸 마우스 올리면 사라짐: 우선순위때문에 백그라운드에서 
+포지션이 안 먹어서 따로 잡아서 포지션 줌 */
 
 /* ?main section */
 

@@ -6,7 +6,7 @@ footer ul li p,
 footer ul li a,
 header nav > ul li{
     font-family: 'MaplestoryOTFLight';
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -17,7 +17,7 @@ section.main_content h2,
 footer ul li h3,
 footer ul li strong a{
     font-family: 'MaplestoryOTFBold';
-    font-weight: normal;
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -41,21 +41,23 @@ header > ul::after{
     clear: both;
 }
 header > ul{
-    padding: 70px 0 80px 0;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 70px 0 80px;
 }
 
 header > ul > li{
-    width: 4.5%;
-    /* margin-right: 3.9%;
+    width: 2.57%;
+    margin-right: 2.57%;
     /* margin을 줘야되ㄴ는데 저 글씨때문에 자꾸 무너져서 암 것도 못 함
     저거 75px 마진 준 거 1920 기준 */
     float: left;
 }
 header > ul li:nth-of-type(1){
-    margin-left: 14.8%;
+    /* margin-left: 14.8%; */
 }
 header > ul li:nth-of-type(4){
-    margin-left: 45%;
+    margin-left: 65.4%;
     /* 얘네가 부모 크기를 받아서 ul크기로 퍼센트가 될텐데 근데
     ul 크기를 width로 걍 주면 안 되는 거 아닌가?? 그냥 안 줘도
     먹나???? ㅁ르ㅔㅅ아 아 아아아아ㅏㅇ */
@@ -82,13 +84,6 @@ body > header > ul > li a:hover{
     color: #878589;
 }
 
-body > header > ul > li a:hover > span{
-    font-size: 0;
-}
-body > header > ul > li a > span{
-    font-size: 18px;
-}
-
 header nav{
     border-top: solid 1px #c9c7ca; 
     border-bottom: solid 1px #c9c7ca;
@@ -99,6 +94,10 @@ header nav ul::after{
     visibility: hidden;
     display: block;
     clear: both;
+}
+header nav ul{
+    max-width: 1360px;
+    margin: 0 auto;
 }
 
 header nav > ul > li{
@@ -140,13 +139,25 @@ header nav > ul > li a span.material-icons{
     line-height: 45px;
 }
 
-header nav > ul > li > ul > li{
+/* header nav > ul > li ul{
+    position: relative;
+} */
+
+header nav > ul > li > ul{
     display: none;
+}
+header nav > ul > li > ul > li{
+    /* display: none; */
     color: #878589;
     font-size: 14px;
 }
-
+header nav > ul > li:hover ul{
+    display: block;
+}
 header nav > ul > li:hover ul li{
+    /* position: absolute; */
+    /* position을 넣어서 얘를 띄워야댐 > nav보더도 그대로 있어야되고
+    안에 요소가 글씨가 커도 부모 li의 크기가 그대로여야 함 */
     display: flex;
     flex-direction: column;
     align-items: center;
