@@ -77,14 +77,15 @@ header h1 ~ ul li a{
     color: #c9c7ca;
     font-size: 0;
 }
-body > header > ul > li a:hover {
+body > header > ul > li a:hover{
     font-size: 18px;
+    color: #878589;
 }
 
-body > header > ul > li a:hover > span {
+body > header > ul > li a:hover > span{
     font-size: 0;
 }
-body > header > ul > li a > span {
+body > header > ul > li a > span{
     font-size: 18px;
 }
 
@@ -123,6 +124,12 @@ header nav ul li a{
     position: relative;
     color: #878589
 }
+header nav ul li a:hover{
+    color: #645772;
+    /* border-top: #645772;
+    border-bottom: #645772; */
+    /* nav한테 보더가 있는데 얘네 호버하면 얘네 범위만 보더 색이 바뀌게 해야댐 */
+}
 
 header nav ul li a span.material-icons{
     position: absolute;
@@ -138,6 +145,7 @@ header nav ul li ul li{
     color: #878589;
     font-size: 14px;
 }
+
 header nav > ul li:hover ul li{
     display: flex;
     flex-direction: column;
