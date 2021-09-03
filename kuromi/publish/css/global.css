@@ -117,6 +117,10 @@ header nav > ul li:last-of-type{
 header nav > ul li:nth-last-of-type(2){
     margin: 0px;
 }
+header nav > ul li:hover ul li{
+    display: inline-block;
+}
+/* 모든 ul li가 한 번에 다 나왓으면 좋겟는데 그렇게 안 나옴 */
 
 header nav ul li a{
     position: relative;
