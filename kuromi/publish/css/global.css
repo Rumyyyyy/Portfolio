@@ -138,6 +138,13 @@ header nav ul li ul li{
 
 /* ?footer */
 
+footer{
+    padding-top: 70px;
+    margin-top: 160px;
+    /* 레이아웃 맞추려고 잠깐 넣은 마진임 */
+    border-top: 1px #c9c7ca solid;
+}
+
 footer ul{
     max-width: 56.5%;
     margin: 0 auto;
