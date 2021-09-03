@@ -47,14 +47,12 @@ header > ul{
 }
 
 header > ul > li{
-    width: 2.57%;
+    position: relative;
+    width: 85px;
     margin-right: 2.57%;
     /* margin을 줘야되ㄴ는데 저 글씨때문에 자꾸 무너져서 암 것도 못 함
     저거 75px 마진 준 거 1920 기준 */
     float: left;
-}
-header > ul li:nth-of-type(1){
-    /* margin-left: 14.8%; */
 }
 header > ul li:nth-of-type(4){
     margin-left: 65.4%;
@@ -66,10 +64,16 @@ header > ul li:nth-of-type(4){
 header > ul > li:last-child{
     margin: 0;
 }
-
 /* header ul li a span meterial아이콘만 살리는 방법을 모르게ㅆ음 
 글씨만 없애고 span한테 display블럭 줬는데도 같이 다 사라짐 이유를 ㅁ름
 현재 쌤은 답장 없음 ㅋ */
+
+header > ul > li span{
+    width: 85px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 42.5px);
+}
 
 header > ul li > a > span ~ div{
     display: none;
@@ -77,7 +81,6 @@ header > ul li > a > span ~ div{
 
 header h1 ~ ul li a{
     color: #c9c7ca;
-    font-size: 0;
 }
 body > header > ul > li a:hover{
     font-size: 18px;
