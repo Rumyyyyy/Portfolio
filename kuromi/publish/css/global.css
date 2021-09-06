@@ -147,9 +147,9 @@ header nav > ul > li a span.material-icons{
     line-height: 45px;
 }
 
-/* header nav > ul > li ul{
+header nav > ul > li ul{
     position: relative;
-} */
+}
 
 header nav > ul > li > ul{
     display: none;
@@ -163,7 +163,7 @@ header nav > ul > li:hover ul{
     display: block;
 }
 header nav > ul > li:hover ul li{
-    /* position: absolute; */
+    position: absolute;
     /* position을 넣어서 얘를 띄워야댐 > nav보더도 그대로 있어야되고
     안에 요소가 글씨가 커도 부모 li의 크기가 그대로여야 함 */
     display: flex;
