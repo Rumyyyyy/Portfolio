@@ -52,6 +52,10 @@ header > ul > li{
     margin-right: 2.57%;
     /* margin을 줘야되ㄴ는데 저 글씨때문에 자꾸 무너져서 암 것도 못 함
     저거 75px 마진 준 거 1920 기준 */
+    /* align-items: center; */
+    /* !이거 공간을 85를 줫는데 그 공간의 가운데에 배치 시키는 법을 모르겟 */
+    /* 그리고 얘네가 분명 제대로 된 한 줄ㅇ엇는데 왜 갑자기 오른쪽 애가 
+    아래로 내려갔는 지 모르겟음 */
     float: left;
 }
 header > ul li:nth-of-type(4){
@@ -72,8 +76,8 @@ header > ul > li span{
     /* width: 90px; */
     position: absolute;
     top: 0;
-    left: calc(50% - 42.5px);
-
+    right: calc(50% - 42.5px);
+    /* !위에가 가운데가 안맞아서 수치 넣는 걸 못하겟음 */
 }
 
 header > ul li > a > span ~ div{
