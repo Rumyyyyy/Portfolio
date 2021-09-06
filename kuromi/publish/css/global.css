@@ -69,12 +69,11 @@ header > ul > li:last-child{
 현재 쌤은 답장 없음 ㅋ */
 
 header > ul > li span{
-    width: 85px;
+    /* width: 90px; */
     position: absolute;
     top: 0;
     left: calc(50% - 42.5px);
 
-    이거 수정하기
 }
 
 header > ul li > a > span ~ div{
