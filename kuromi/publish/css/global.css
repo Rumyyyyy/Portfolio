@@ -9,8 +9,10 @@ section.Announcement_content h2,
 section.Announcement_content p,
 div.Announcement_content form input,
 section.cart_content h2,
-section.join_content h2,
-section.join_content form fieldset legend{
+section.login_content h2,
+section.login_content form fieldset input::placeholder,
+section.login_content form fieldset input[type = 'submit'],
+section.login_content form p a{
     font-family: 'MaplestoryOTFLight';
     font-weight: 300;
     font-style: normal;

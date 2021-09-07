@@ -157,21 +157,58 @@ section.cart_content h2{
 
 
 
-/* ?join */
+/* ?login */
 
-section.join_content h2{
+section.login_content h2{
+    margin: 100px 0 55px;
     font-size: 36px;
-    color: #464348;
+    color: #000;
     text-align: center;
-    margin-top: 100px;
 }
 
-section.join_content form{
-    max-width: 70%;
+section.login_content form fieldset{
+    margin-bottom: 10px;
+}
+
+section.login_content form fieldset input{
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: 20%;
+    box-sizing: border-box;
     margin: 0 auto;
+    border: #878589 solid 1px;
+}
+section.login_content form fieldset input[type = 'text']{
+    margin-bottom: 20px;
+}
+section.login_content form fieldset input[type = 'password']{
+    margin-bottom: 55px;
+}
+section.login_content form fieldset input[type = 'submit']{
+    height: 50px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #878589;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+section.login_content form fieldset input:not(:last-of-type){
+    padding-left: 20px;
+}
+section.login_content form fieldset input::placeholder{
+    color: #878589;
+    font-size: 18px;
 }
 
-section.join_content form fieldset legend{
-    font-size: 16px;
+section.login_content form p{
+    width: 110px;
+    margin: 0 auto;
+    /* 가운데가 아니라 로그인 버튼이랑 왼쪽을 맞춰서 두고싶음 */
+}
+
+section.login_content form p a{
+    font-size: 11px;
     color: #000;
 }
