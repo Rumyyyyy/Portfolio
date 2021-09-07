@@ -153,3 +153,25 @@ section.cart_content h2{
     text-align: center;
     margin-top: 100px;
 }
+/* 저 레이아웃 모양 잡는 거 못하겟음ㄷ */
+
+
+
+/* ?join */
+
+section.join_content h2{
+    font-size: 36px;
+    color: #464348;
+    text-align: center;
+    margin-top: 100px;
+}
+
+section.join_content form{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+section.join_content form fieldset legend{
+    font-size: 16px;
+    color: #000;
+}
