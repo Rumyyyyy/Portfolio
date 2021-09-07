@@ -150,4 +150,6 @@ div.Announcement_content form input[type = 'submit']{
 section.cart_content h2{
     color: #878589;
     font-size: 36px;
+    text-align: center;
+    margin-top: 100px;
 }
