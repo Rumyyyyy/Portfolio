@@ -98,7 +98,7 @@ section.main_content div ul li a p:last-of-type{
 
 
 
-/* ?Announcement section */
+/* ?Announcement */
 
 section.Announcement_content{
     margin-top: 100px;
@@ -141,4 +141,13 @@ div.Announcement_content form input[type = 'submit']{
     font-size: 14px;
     border: 0;
     color: #fff;
+}
+
+
+
+/* ?cart */
+
+section.cart_content h2{
+    color: #878589;
+    font-size: 36px;
 }

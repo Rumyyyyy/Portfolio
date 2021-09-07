@@ -7,7 +7,8 @@ footer ul li a,
 header nav > ul li,
 section.Announcement_content h2,
 section.Announcement_content p,
-div.Announcement_content form input{
+div.Announcement_content form input,
+section.cart_content h2{
     font-family: 'MaplestoryOTFLight';
     font-weight: 300;
     font-style: normal;
