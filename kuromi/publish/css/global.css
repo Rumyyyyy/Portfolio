@@ -12,7 +12,8 @@ section.cart_content h2,
 section.login_content h2,
 section.login_content form fieldset input::placeholder,
 section.login_content form fieldset input[type = 'submit'],
-section.login_content form p a{
+section.login_content form p a,
+section.login_content form > a{
     font-family: 'MaplestoryOTFLight';
     font-weight: 300;
     font-style: normal;

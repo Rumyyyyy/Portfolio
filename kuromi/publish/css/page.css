@@ -166,6 +166,10 @@ section.login_content h2{
     text-align: center;
 }
 
+section.login_content form{
+    margin-bottom: 230px;
+}
+
 section.login_content form fieldset{
     margin-bottom: 10px;
 }
@@ -207,8 +211,23 @@ section.login_content form p{
     margin: 0 auto;
     /* 가운데가 아니라 로그인 버튼이랑 왼쪽을 맞춰서 두고싶음 */
 }
+section.login_content form p:last-of-type{
+    margin-bottom: 70px;
+}
 
 section.login_content form p a{
     font-size: 11px;
     color: #000;
+}
+
+section.login_content form > a{
+    display: block;
+    width: 20%;
+    height: 60px;
+    border: solid #000 1px;
+    text-align: center;
+    line-height: 60px;
+    margin: 0 auto;
+    color: #000;
+    font-size: 18px;
 }
