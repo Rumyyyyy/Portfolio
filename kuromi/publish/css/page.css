@@ -286,3 +286,8 @@ section.join_content form fieldset:first-of-type legend{
 section.join_content form fieldset:not(:nth-last-of-type(3),:nth-last-of-type(2),:last-of-type) label{
     background-color: #e5e4e5;
 }
+section.join_content form fieldset:first-of-type label{
+    background-color: #fff;
+}
+
+section.join_content form
