@@ -241,4 +241,30 @@ section.join_content h2{
     color: #464348;
     font-size: 48px;
     text-align: center;
+    margin: 100px 0 85px;
+}
+
+section.join_content form{
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+section.join_content form fieldset:not(:nth-last-of-type(2),:last-of-type){
+    background-color: #e5e4e5;
+}
+section.join_content form fieldset:nth-of-type(1){
+    margin-bottom: 75px;
+}
+section.join_content form fieldset:nth-of-type(2){}
+section.join_content form fieldset:nth-of-type(3){}
+section.join_content form fieldset:nth-of-type(4){}
+section.join_content form fieldset:nth-of-type(5){}
+section.join_content form fieldset:nth-of-type(6){}
+
+section.join_content form fieldset legend{
+    color: #000;
+    font-size: 12px;
+}
+section.join_content form fieldset:first-of-type legend{
+    font-size: 16px;
 }
