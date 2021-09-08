@@ -131,14 +131,16 @@
         <form action="">
             <fieldset>
                 <label for="">회원구분</label>
-                <input type="radio" name=" Membership" id="btnMember_1"><label for="btnMember_1">개인회원</label>
-                <input type="radio" name=" Membership" id="btnMember_2"><label for="btnMember_2">외국인 회원</label>
+                <div>
+                     <input type="radio" name=" Membership" id="btnMember_1"><label for="btnMember_1">개인회원</label>
+                    <input type="radio" name=" Membership" id="btnMember_2"><label for="btnMember_2">외국인 회원</label>
+                </div>  
             </fieldset>  
             <fieldset>
                 <legend>기본정보</legend>
-                <label for="userId">아이디</label><input type="text" id="userId">
-                <label for="userPassword">비밀번호</label><input type="password" id="userPassword">
-                <label for="userVerifypassword">비밀번호 확인</label><input type="password" id="userVerifypassword">
+                <label for="userId">아이디</label><div><input type="text" id="userId"></div>
+                <label for="userPassword">비밀번호</label><div><input type="password" id="userPassword"></div>
+                <label for="userVerifypassword">비밀번호 확인</label><div><input type="password" id="userVerifypassword"></div>
             </fieldset>  
             <fieldset>
                 <label for="userName">이름</label><input type="text" id="userName">
