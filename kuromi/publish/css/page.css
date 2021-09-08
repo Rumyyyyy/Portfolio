@@ -162,7 +162,7 @@ section.cart_content h2{
 section.login_content h2{
     margin: 100px 0 55px;
     font-size: 36px;
-    color: #000;
+    color: #464348;
     text-align: center;
 }
 
@@ -209,7 +209,8 @@ section.login_content form fieldset input::placeholder{
 section.login_content form p{
     width: 110px;
     margin: 0 auto;
-    /* 가운데가 아니라 로그인 버튼이랑 왼쪽을 맞춰서 두고싶음 */
+    padding-right: calc(20% - 110px);
+    /* 가운데가 아니라 로그인 버튼이랑 왼쪽을 맞춰서 두고싶음: 패딩 줌 */
 }
 section.login_content form p:last-of-type{
     margin-bottom: 70px;
@@ -230,4 +231,14 @@ section.login_content form > a{
     margin: 0 auto;
     color: #000;
     font-size: 18px;
+}
+
+
+
+/* ?join */
+
+section.join_content h2{
+    color: #464348;
+    font-size: 48px;
+    text-align: center;
 }
