@@ -249,15 +249,29 @@ section.join_content form{
     margin: 0 auto;
 }
 
-section.join_content form fieldset:not(:nth-last-of-type(2),:last-of-type){
-    background-color: #e5e4e5;
+section.join_content form fieldset{
+    display: flex;
+    flex-direction: column;
+}
+section.join_content form fieldset:not(:nth-last-of-type(3),:nth-last-of-type(2),:last-of-type){
+    border-top: #c9c7ca 1px solid;
+    border-bottom: #c9c7ca 1px solid;
 }
 section.join_content form fieldset:nth-of-type(1){
     margin-bottom: 75px;
+    border-top: 2px solid #c9c7ca;
+    flex-direction: row;
 }
-section.join_content form fieldset:nth-of-type(2){}
-section.join_content form fieldset:nth-of-type(3){}
-section.join_content form fieldset:nth-of-type(4){}
+section.join_content form fieldset:nth-of-type(2){
+    border-top: 2px #c9c7ca solid;
+}
+section.join_content form fieldset:nth-of-type(3){
+    border-top: 2px #c9c7ca solid;
+    margin-bottom: 75px;
+}
+section.join_content form fieldset:nth-of-type(4){
+    border-top: 2px #c9c7ca solid;
+}
 section.join_content form fieldset:nth-of-type(5){}
 section.join_content form fieldset:nth-of-type(6){}
 
@@ -267,4 +281,8 @@ section.join_content form fieldset legend{
 }
 section.join_content form fieldset:first-of-type legend{
     font-size: 16px;
+}
+
+section.join_content form fieldset:not(:nth-last-of-type(3),:nth-last-of-type(2),:last-of-type) label{
+    background-color: #e5e4e5;
 }
