@@ -129,6 +129,7 @@
     <section class="join_content">
         <h2>회원가입</h2>
         <form action="">
+
             <fieldset>
                 <label for="">회원구분</label>
                 <div>
@@ -136,28 +137,44 @@
                     <input type="radio" name=" Membership" id="btnMember_2"><label for="btnMember_2">외국인 회원</label>
                 </div>  
             </fieldset>  
+
             <fieldset>
                 <legend>기본정보</legend>
                 <label for="userId">아이디</label><div><input type="text" id="userId"></div>
                 <label for="userPassword">비밀번호</label><div><input type="password" id="userPassword"></div>
                 <label for="userVerifypassword">비밀번호 확인</label><div><input type="password" id="userVerifypassword"></div>
             </fieldset>  
+
             <fieldset>
-                <label for="userName">이름</label><div><input type="text" id="userName"></div>
-                <label for="userAddress">주소</label><div><input type="text" id="userAddress"><input type="button" id="userAddress" value="우편번호"></div>
-                <div><input type="text" id="userAddress"></div><div><input type="text" id="userAddress"></div>
+                <label for="userName">이름</label>
+                <div>
+                    <input type="text" id="userName">
+                </div>
+
+                <label for="userAddress">주소</label>
+                <div>
+                    <input type="text" id="userAddress"><input type="button" id="userAddress" value="우편번호">
+                    <input type="text" id="userAddress">
+                    <input type="text" id="userAddress">
+                </div>
+
                 <label for="phone">일반전화</label><div><input type="tel" id="phone"> - <input type="tel" id="phone"> - <input type="tel" id="phone"></div>
+                
                 <label for="userPhone">휴대전화</label><div><input type="tel" id="userPhone"> - <input type="tel" id="userPhone"> - <input type="tel" id="userPhone"></div>
+                
                 <label for="userMail">이메일</label><div><input type="email" id="userMail"></div>
             </fieldset>
+
             <fieldset>
-                <legend>
-                    추가정보
-                </legend>
-                <label for="userBirth">생년월일</label><div><input type="text" id="userBirth"> 년 <input type="text" id="userBirth"> 월 <input type="text" id="userBirth"> 일</div>
-                <div><input type="radio" name="Birth" id="btnBirth_1"></div><label for="btnBirth_1">양력</label>
-                <div><input type="radio" name="Birth" id="btnBirth_2"></div><label for="btnBirth_2">음력</label>
-            </fieldset>  
+                <legend>추가정보</legend>
+                <label for="userBirth">생년월일</label>
+                <div>
+                    <input type="text" id="userBirth"> 년 <input type="text" id="userBirth"> 월 <input type="text" id="userBirth"> 일
+                    <input type="radio" name="Birth" id="btnBirth_1"><label for="btnBirth_1">양력</label>
+                    <input type="radio" name="Birth" id="btnBirth_2"><label for="btnBirth_2">음력</label>
+                </div>
+            </fieldset> 
+            
             <fieldset>
                 <legend>전체동의</legend>
                 <div><input type="checkbox" id="agreement"></div><label for="agreement">이용약관 및 개인정보 수집 및 이용, 쇼핑 정보 수신(선택)에 모두 동의합니다.</label>
