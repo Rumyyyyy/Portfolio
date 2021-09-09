@@ -302,6 +302,12 @@ section.join_content form fieldset:not(:nth-last-of-type(2),:last-of-type) label
 section.join_content form fieldset:nth-of-type(4) div label{
     background-color: #fff;
 }
+section.join_content form fieldset:nth-of-type(4) div label:nth-last-of-type(2){
+    width: 3%;
+}
+section.join_content form fieldset:nth-of-type(4) div label:last-of-type{
+    width: 3%;
+}
 section.join_content form fieldset:first-of-type div label{
     background-color: #fff;
     border: 0;
@@ -360,4 +366,10 @@ section.join_content form fieldset:nth-of-type(3) div:nth-of-type(3) input{
 section.join_content form fieldset:nth-of-type(3) div:nth-of-type(4) input{
     width: 8.25%;
     margin-right: 10px;
+}
+section.join_content form fieldset:nth-of-type(4) div input:first-of-type{
+    width: 8%;
+}
+section.join_content form fieldset:nth-of-type(4) div input:not(:first-of-type){
+    width: 4%;
 }
