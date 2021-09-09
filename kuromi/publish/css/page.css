@@ -323,6 +323,7 @@ section.join_content form fieldset:nth-of-type(4) div{
 }
 
 section.join_content form fieldset div input{
+    width: 16.5%;
     margin-left: 10px;
 }
 
@@ -331,4 +332,20 @@ section.join_content form fieldset:nth-last-of-type(3) div input:nth-of-type(2){
     border: 1px solid #e5e4e5;
     /* !input button의 배경을 하얀색으로 하고싶음 */
 }
-section.join_content form fieldset:nth-last-of-type(3) div input:nth-of-type(1)
+section.join_content form fieldset:nth-of-type(3) div:nth-of-type(2) input{
+    /* flex-wrap: wrap; */
+}
+section.join_content form fieldset:nth-of-type(3) div:nth-of-type(2) input:nth-of-type(1){
+    width: 8.26%;
+}
+section.join_content form fieldset:nth-of-type(3) div:nth-of-type(2) input:nth-of-type(2){
+    width: 8.26%;
+}
+section.join_content form fieldset:nth-of-type(3) div:nth-of-type(2) input:nth-of-type(3){
+    width: 33%;
+}
+section.join_content form fieldset:nth-of-type(3) div:nth-of-type(2) input:nth-of-type(4){
+    width: 33%;
+}
+/* !flexwrap도 써보고 마진값으로도 밀어보려고 했는데 첫번ㅉ div 범위가
+이상해지고 밑으로 떨어지지도 않음 */
