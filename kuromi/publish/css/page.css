@@ -389,7 +389,7 @@ section.join_content form fieldset:nth-last-of-type(2){
     border: 1px solid #c9c7ca;
 }
 
-section.join_content form fieldset:nth-last-of-type(2) div{
+section.join_content form fieldset:nth-last-of-type(2) div:first-of-type{
     width: 20px;
     border-bottom: 1px #c9c7ca solid;
     padding-left: 20px;
@@ -405,7 +405,7 @@ section.join_content form fieldset:nth-last-of-type(2) label{
     line-height: 40px;
     width: calc(100% - 60px);
 }
-section.join_content form fieldset:nth-last-of-type(2) label:not(:first-of-type){
+section.join_content form fieldset:nth-last-of-type(2) div label{
     width: 3%;
     line-height: normal;
     font-size: 12px;
@@ -414,8 +414,12 @@ section.join_content form fieldset:nth-last-of-type(2) label:not(:first-of-type)
     margin-left: 10px;
 }
 
-section.join_content form fieldset:nth-last-of-type(2) textarea ~ input{
+section.join_content form fieldset:nth-last-of-type(2) div:not(:first-of-type) input{
     margin-left: 15px;
+}
+section.join_content form fieldset:nth-last-of-type(2) div:not(:first-of-type){
+    width: 92.5%;
+    margin: 0 auto;
 }
 section.join_content form fieldset:nth-last-of-type(2) div input{
     
@@ -431,9 +435,10 @@ section.join_content form fieldset:nth-last-of-type(2) span{
 section.join_content form fieldset:nth-last-of-type(2) textarea{
     display: block;
     width: 92.5%;
-    margin: 0 auto;
+    margin: 0 auto 10px;
 }
 
-section.join_content form fieldset:nth-last-of-type(2) textarea + p{
+section.join_content form fieldset:nth-last-of-type(2) div:not(:first-of-type) p{
     font-size: 12px;
+    display: inline-block;
 }
