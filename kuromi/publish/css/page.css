@@ -405,18 +405,35 @@ section.join_content form fieldset:nth-last-of-type(2) label{
     line-height: 40px;
     width: calc(100% - 60px);
 }
+section.join_content form fieldset:nth-last-of-type(2) label:not(:first-of-type){
+    width: 3%;
+    line-height: normal;
+    font-size: 12px;
+    border: 0;
+    padding: 0;
+    margin-left: 10px;
+}
 
+section.join_content form fieldset:nth-last-of-type(2) textarea ~ input{
+    margin-left: 15px;
+}
 section.join_content form fieldset:nth-last-of-type(2) div input{
     
 }
 
 section.join_content form fieldset:nth-last-of-type(2) span{
-    width: 100%;
     font-size: 12px;
     color: #000;
     margin: 20px 0 10px;
-}
-section.join_content form fieldset:nth-last-of-type(2) textarea{
     width: 92.5%;
     margin: 0 auto;
+}
+section.join_content form fieldset:nth-last-of-type(2) textarea{
+    display: block;
+    width: 92.5%;
+    margin: 0 auto;
+}
+
+section.join_content form fieldset:nth-last-of-type(2) textarea + p{
+    font-size: 12px;
 }

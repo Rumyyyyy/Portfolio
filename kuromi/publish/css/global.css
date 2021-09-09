@@ -17,7 +17,8 @@ section.login_content form > a,
 section.join_content h2,
 section.join_content form fieldset legend,
 section.join_content form fieldset label,
-section.join_content form fieldset:nth-last-of-type(2) span{
+section.join_content form fieldset:nth-last-of-type(2) span,
+section.join_content form fieldset:nth-last-of-type(2) textarea + p{
     font-family: 'MaplestoryOTFLight';
     font-weight: 300;
     font-style: normal;
