@@ -103,11 +103,17 @@ header > ul li > a > span ~ div{
 }
 
 header h1 ~ ul li a{
+    color: #fff;
+}
+header h1 ~ ul li a span{
     color: #c9c7ca;
 }
 body > header > ul > li a:hover{
     font-size: 18px;
     color: #878589;
+}
+body > header > ul > li a:hover span{
+    display: none;
 }
 
 header nav{

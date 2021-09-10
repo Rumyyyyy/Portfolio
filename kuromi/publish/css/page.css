@@ -374,18 +374,22 @@ section.join_content form fieldset:nth-of-type(3) div:nth-of-type(2){
 /* *주소 밑으로 떨궈야되서 flexwrap 사용함 */
 section.join_content form fieldset:nth-of-type(3) div:nth-of-type(2) input:nth-of-type(1){
     width: 8.26%;
+    margin: 10px 0 10px 10px;
 }
 section.join_content form fieldset:nth-of-type(3) div:nth-of-type(2) input:nth-of-type(2){
     width: 8.26%;
+    margin: 10px 0 10px 15px;
+    margin-right: calc(90% - (16.52% - 30px));
 }
 section.join_content form fieldset:nth-of-type(3) div:nth-of-type(2) input:nth-of-type(3){
     width: 33%;
+    margin-right: calc(70% - (16.52% - 30px));
 }
 section.join_content form fieldset:nth-of-type(3) div:nth-of-type(2) input:nth-of-type(4){
     width: 33%;
+    margin: 10px 0 10px 10px;
 }
-/* !flexwrap도 써보고 마진값으로도 밀어보려고 했는데 첫번ㅉ div 범위가
-이상해지고 밑으로 떨어지지도 않음 */
+/* *margin 사용해서 옆으로 밀 예정 */
 section.join_content form fieldset:nth-of-type(3) div:nth-of-type(3) input{
     width: 8.25%;
     margin-right: 10px;
@@ -408,14 +412,15 @@ section.join_content form fieldset:nth-of-type(4) div input:last-of-type{
     width: 1%;
 }
 
+
 /* * 전체동의 부분 */
 
 section.join_content form fieldset:nth-last-of-type(2){
     border: 1px solid #c9c7ca;
 }
 
-section.join_content form fieldset:nth-last-of-type(2) div:first-of-type{
-    width: 20px;
+section.join_content form fieldset:nth-last-of-type(2) > div:first-of-type{
+    /* width: 20px; */
     border-bottom: 1px #c9c7ca solid;
     padding-left: 20px;
     /* 원래 마진으로 줫는데 보더가 안 먹어서 패딩으로 바꿈 다른 좋은 
@@ -445,12 +450,10 @@ section.join_content form fieldset:nth-last-of-type(2) div:not(:first-of-type) i
 section.join_content form fieldset:nth-last-of-type(2) div:not(:first-of-type){
     width: 92.5%;
     margin: 0 auto 20px;
-    /* !저 가운데에 있는 이용약고ㅑ나 동의 밑에 보더가 한 줄 깔려야함 */
+    /* !저 가운데에 있는 이용약고ㅑ나 동의 밑에 보더가 한 줄 깔려야함 = div 하나 더 사용*/
 }
 section.join_content form fieldset:nth-last-of-type(2) div input{
-    align-items: center;
-    /* checkbox를 가운데에 잘 맞추고 싶은데 플렉스 쓰고
-    얼라인아이템 쓰면 레이아웃 망가져요 */
+    vertical-align: sub;
 }
 
 section.join_content form fieldset:nth-last-of-type(2) span{
