@@ -123,14 +123,15 @@ header nav{
 }
 header nav > ul::before{
     content: '';
-    /* display: none; */
     background-color: #fff;
-    height: 200px;
+    height: 0px;
+    transition: height 0.1ms ease-in-out, border-bottom 0.1ms;
     position: absolute;
     left: 0;
     top: 40px;
     width: 100%;
     z-index: 100;
+    border: 0;
 }
 header nav ul::after{
     content: '';
@@ -142,6 +143,11 @@ header nav ul{
     max-width: 1360px;
     margin: 0 auto;
     z-index: 100;
+}
+
+header nav ul:hover::before{
+    height: 200PX;
+    border-bottom: solid 1px #c9c7ca;
 }
 
 header nav ul:hover li ul{
