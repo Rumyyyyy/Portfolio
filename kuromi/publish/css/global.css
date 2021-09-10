@@ -119,8 +119,19 @@ body > header > ul > li a:hover span{
 header nav{
     border-top: solid 1px #c9c7ca; 
     border-bottom: solid 1px #c9c7ca;
+    position: relative;
 }
-
+header nav > ul::before{
+    content: '';
+    /* display: none; */
+    background-color: #fff;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    z-index: 100;
+}
 header nav ul::after{
     content: '';
     visibility: hidden;
@@ -130,6 +141,11 @@ header nav ul::after{
 header nav ul{
     max-width: 1360px;
     margin: 0 auto;
+    z-index: 100;
+}
+
+header nav ul:hover li ul{
+    display: block;
 }
 
 header nav > ul > li{
@@ -194,18 +210,7 @@ header nav > ul > li > ul > li{
     color: #878589;
     font-size: 14px;
 } 
-header nav > ul > li:hover > ul > li:nth-of-type(1){
-    top: 25px;
-}
-header nav > ul > li:hover > ul > li:nth-of-type(2){
-    top: 50px;
-}
-header nav > ul > li:hover > ul > li:nth-of-type(3){
-    top: 75px;
-}
-header nav > ul > li:hover > ul > li:nth-of-type(4){
-    top: 100px;
-}
+
 
 /* 모든 ul li가 한 번에 다 나왓으면 좋겟는데 그렇게 안 나옴 */
 header nav > ul > li:hover ul li a:hover{

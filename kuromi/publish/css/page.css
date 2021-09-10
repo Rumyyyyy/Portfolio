@@ -5,6 +5,8 @@ div.bx-wrapper{
     margin-bottom: 105px;
     position: relative;
     border: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
     border-bottom: 45px #e2d0f4 solid;
 }
 
@@ -33,6 +35,7 @@ div.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus{
 }
 /* 배너 오른쪽 화살표가 자꾸 마우스 올리면 사라짐: 우선순위때문에 백그라운드에서 
 포지션이 안 먹어서 따로 잡아서 포지션 줌 */
+
 
 /* ?main section */
 
