@@ -22,7 +22,10 @@ section.join_content form fieldset:nth-last-of-type(2) div:not(:first-of-type) p
 section.join_content form fieldset:last-of-type input,
 section.join_content form fieldset:nth-of-type(3) div input:nth-of-type(2),
 section.join_content form fieldset:nth-of-type(4),
-section.join_content form fieldset:nth-last-of-type(2) textarea{
+section.join_content form fieldset:nth-last-of-type(2) textarea,
+section.objects h2,
+section.objects a,
+section.objects ul li{
     font-family: 'MaplestoryOTFLight';
     font-weight: 300;
     font-style: normal;
@@ -222,6 +225,10 @@ header nav > ul > li > ul > li{
 header nav > ul > li:hover ul li a:hover{
     color: #000;
 }
+
+
+
+/* !ul에 올려도 다 나옴 메뉴가 */
 
 
 

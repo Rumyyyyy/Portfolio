@@ -504,3 +504,97 @@ section.join_content form fieldset:last-of-type input[type = 'submit']{
 }
 /* todo. 회원가입은 선택자 연습하면서 해보기 */
 /* todo. 머리가 너무 아프면 상품 리스트 페이지 먼저 하기 디테일 말고 리스트 */
+
+/* ?object */
+
+section.objects::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+section.objects h2{
+    font-size: 36px;
+    text-align: center;
+    margin: 100px 0 0;
+}
+
+section.objects a{
+    float: right;
+    margin-top: 70px;
+    font-size: 12px;
+    color: #878589;
+}
+section.objects a:hover{
+    color: #000;
+}
+section.objects a:not(:first-of-type){
+    margin-right: 5px;
+    border-right: 1px solid #c9c7ca;
+    padding-right: 5px;
+}
+section.objects a:first-of-type{
+    margin-right: 40px;
+}
+
+section.objects ul::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+section.objects ul{
+    max-width: 1400px;
+    margin: 135px auto 0;
+}
+
+section.objects ul li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    background: center top no-repeat;
+    background-size: 342px;
+    padding-top: 397px;
+    font-size: 16px;
+    line-height: 40px;
+    margin-bottom: 70px;
+}
+
+section.objects ul li:nth-of-type(1){
+    background-image: url('../../img/object1.png');
+    line-height: 20px;
+}
+section.objects ul li:nth-of-type(2){
+    background-image: url('../../img/object2.png');
+    line-height: 20px;
+}
+section.objects ul li:nth-of-type(3){
+    background-image: url('../../img/object3.png');
+}
+section.objects ul li:nth-of-type(4){
+    background-image: url('../../img/object4.png');
+}
+section.objects ul li:nth-of-type(5){
+    background-image: url('../../img/object5.png');
+}
+section.objects ul li:nth-of-type(6){
+    background-image: url('../../img/object6.png');
+}
+section.objects ul li:nth-of-type(7){
+    background-image: url('../../img/object7.png');
+    line-height: 20px;
+}
+section.objects ul li:nth-of-type(8){
+    background-image: url('../../img/object8.png');
+}
+
+section.objects ul li p{
+    display: block;
+    margin-bottom: 10px;
+    color: #716d73;
+}
+
+section.objects ul li b{
+    display: block;
+}
