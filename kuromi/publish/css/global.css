@@ -24,7 +24,7 @@ section.join_content form fieldset:nth-of-type(3) div input:nth-of-type(2),
 section.join_content form fieldset:nth-of-type(4),
 section.join_content form fieldset:nth-last-of-type(2) textarea,
 section.objects h2,
-section.objects a,
+section.objects ul li button,
 section.objects ul li{
     font-family: 'MaplestoryOTFLight';
     font-weight: 300;
@@ -46,6 +46,14 @@ footer ul li strong a{
 
 /* *class pager */
 
+/* *subPage */
+div.subPage header{
+    margin-bottom: 100px;
+}
+
+div.subPage h2{
+    margin-bottom: 70px;
+}
 
 /* ?header */
 
