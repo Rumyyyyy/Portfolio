@@ -495,7 +495,6 @@ section.join_content form fieldset:last-of-type input[type = 'submit']{
     color: #fff;
 }
 /* todo. 회원가입은 선택자 연습하면서 해보기 */
-/* todo. 머리가 너무 아프면 상품 리스트 페이지 먼저 하기 디테일 말고 리스트 */
 
 /* ?object */
 
@@ -538,35 +537,35 @@ section.objects ul:nth-of-type(2):after{
     display: block;
     clear: both;
 }
-section.objects ul:nth-of-type(2){
+section.objects ul.list_item{
     max-width: 73%;
     margin: 0 auto;
 } 
 
-section.objects ul:nth-of-type(2) li{
+section.objects ul.list_item li{
     width: 25%;
     float: left;
     margin-bottom: 70px;
 }
 
-section.objects ul:nth-of-type(2) li a::after{
+section.objects ul.list_item li a::after{
     content: '';
     display: block;
     visibility: hidden;
     clear: both;
 }
 
-section.objects ul:nth-of-type(2) li a span.material-icons{
+section.objects ul.list_item li a span.material-icons{
     color: #c8c7c8;
     float: right;
 }
 
 section.objects ul:nth-of-type(2) li a img{
     width: 100%;
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-section.objects ul:nth-of-type(2) li a p{
+section.objects ul.list_item li a p{
     height: 40px;
     display: flex;
     align-items: center;
@@ -574,11 +573,11 @@ section.objects ul:nth-of-type(2) li a p{
     text-align: center;
     line-height: 20px;
     color: #716d73;
-    margin-top: 55px;
+    margin-top: 40px;
     margin-bottom: 10px;
 }
 
-section.objects ul:nth-of-type(2) li a b{
+section.objects ul.list_item li a b{
     display: flex;
     justify-content: center;
     color: #000;

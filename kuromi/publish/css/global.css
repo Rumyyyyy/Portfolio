@@ -156,12 +156,12 @@ header nav ul{
     z-index: 100;
 }
 
-header nav ul:hover::before{
+header nav.active ul::before{
     height: 200PX;
     border-bottom: solid 1px #c9c7ca;
 }
 
-header nav ul:hover li ul{
+header nav.active ul li ul{
     display: block;
 }
 
@@ -170,19 +170,15 @@ header nav > ul > li{
     margin-right: 2%;
     line-height: 45px;
     font-size: 18px;
+    position: relative;
+    z-index: 110;
 }
 
 header nav > ul > li:last-of-type{
     float: right;
-    /* 고객센터의 그 아이콘이 자꾸 지 멋대로 돌아다님 이것도 포지션 써야댐??
-    포지션 쓰면 a로 relative 잡아야대는디 근데 그럼 위치를 어케 정해줘야댐? */
 }
 header nav > ul > li:nth-last-of-type(2){
     margin: 0px;
-}
-
-header nav > ul > li{
-    position: relative;
 }
 
 header nav > ul > li a{
