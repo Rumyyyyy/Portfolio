@@ -327,8 +327,8 @@ section.join_content form fieldset:first-of-type div label{
 }
 section.join_content form fieldset label:not(:last-of-type){
     border-bottom: 1px #c9c7ca solid;
-    
 }
+/* !자꾸 위로 하얀색 공간이 생김 */
 section.join_content form fieldset:nth-of-type(2) label:first-of-type{
     border-top: 2px #c9c7ca solid;
 }
