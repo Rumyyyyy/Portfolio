@@ -127,6 +127,8 @@ body > header > ul > li a:hover span{
     display: none;
 }
 
+/* !갑자기 아이콘이 글자로 안 바뀜 */
+
 header nav{
     border-top: solid 1px #c9c7ca; 
     border-bottom: solid 1px #c9c7ca;
