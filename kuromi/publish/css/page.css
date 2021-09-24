@@ -195,7 +195,19 @@ section.cart_content form fieldset > p{
 }
 
 div.order_object div.listBox{
+    width: 100%;
     float: left;
+}
+div.order_object .listBox span{
+    display: inline-block;
+    width: 11.7%;
+    color: #716d73;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+}
+div.order_object div.listBox:last-of-type span{
+
 }
 
 section.cart_content form fieldset > div.order_button a{
