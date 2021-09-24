@@ -186,6 +186,18 @@ section.cart_content form fieldset > div.delivery_object p{
     color: #646165;
 }
 
+section.cart_content form fieldset > p{
+    display: none;
+    margin: 200px 0 100px;
+    text-align: center;
+    font-size: 12px;
+    color: #878589;
+}
+
+div.order_object div.listBox{
+    float: left;
+}
+
 section.cart_content form fieldset > div.order_button a{
     width: 10.7%;
     height: 40px;
