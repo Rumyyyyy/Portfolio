@@ -145,6 +145,11 @@ div.Announcement_content form input[type = 'submit']{
 
 /* ?cart */
 
+section.cart_content{
+    max-width: 73%;
+    margin: 0 auto;
+}
+
 section.cart_content h2{
     color: #878589;
     font-size: 36px;
@@ -155,25 +160,46 @@ section.cart_content form a{
     font-size: 12px;
     display: inline-block;
 }
-section.cart_content form > a:not(:nth-of-type(n + 3)){
+
+section.cart_content form fieldset > div.delivery_object{
+    margin-bottom: 25px;
+}
+section.cart_content form fieldset > div.delivery_object::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+section.cart_content form fieldset > div.delivery_object a{
     color: #646165;
+    padding: 10px 20px ;
     /* 클릭 이벤트 넣을 예정 클릭하면 글자색 검은색으로 바뀜 */
+}
+section.cart_content form fieldset > div.delivery_object a{
     float: left;
 }
-section.cart_content form > a:nth-of-type(n + 3){
-    width: 150px;
+
+section.cart_content form fieldset > div.delivery_object p{
+    float: right;
+    font-size: 12px;
+    color: #646165;
+}
+
+section.cart_content form fieldset > div.order_button a{
+    width: 10.7%;
     height: 40px;
     color: #fff;
     text-align: center;
     line-height: 40px;
 }
-section.cart_content form > a:nth-of-type(3){
+section.cart_content form fieldset > div.order_button a:nth-of-type(1){
     background-color: #878589;
 }
-section.cart_content form > a:nth-of-type(4){
+section.cart_content form fieldset > div.order_button a:nth-of-type(2){
     background-color: #c9c7ca;
 }
-section.cart_content form > a:nth-of-type(5){
+section.cart_content form fieldset > div.order_button a:nth-of-type(3){
     color: #000;
     background-color: #fff;
     border: 1px solid #000;

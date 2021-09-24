@@ -130,37 +130,45 @@
         <section class="cart_content">
             <h2>장바구니</h2>
             <form action="">
-                <a href="">국내 배송 상품</a>
-                <a href="">해외 배송 상품</a>
-                <p>장바구니에 담긴 상품은 30일간 보관됩니다.</p> 
-                <p>장바구니에 담긴 상품이 없습니다.</p>
-                <div>
-                    <input type="checkbox">
-                    <span>이미지</span>  
-                    <span>상품정보</span>  
-                    <span>판매가</span>  
-                    <span>수량</span>  
-                    <span>적립금</span>  
-                    <span>배송비</span>
-                    <span>합계</span>
-                    <span>삭제</span>
-                </div>
-                <ul>
-                    <li>
-                        <input type="checkbox">
-                        <a href=""><img src="../img/cart ex img.png" alt=""></a>
-                        <span>[해피 레이니 데이즈 시리즈] 쿠로미 마스코트 커버 파우치</span>
-                        <a href=""><span>12500원</span></a>
-                        <span>1</span>
-                        <span>-</span>
-                        <span>2500원</span>
-                        <span>15000원</span>
-                        <a href="">삭제</a>
-                    </li>
-                </ul>
-                <a href="">전체 상품 주문</a>
-                <a href="">선택 상품 주문</a>
-                <a href="">쇼핑 계속하기</a>
+                <fieldset>
+                    <div class="delivery_object">
+                        <a href="">국내 배송 상품</a>
+                        <a href="">해외 배송 상품</a>
+                        <p>장바구니에 담긴 상품은 30일간 보관됩니다.</p> 
+                    </div>
+                    <p>장바구니에 담긴 상품이 없습니다.</p>
+                    <div class="order_object">
+                        <div class="listBox">
+                            <input type="checkbox">
+                            <span>이미지</span>  
+                            <span>상품정보</span>  
+                            <span>판매가</span>  
+                            <span>수량</span>  
+                            <span>적립금</span>  
+                            <span>배송비</span>
+                            <span>합계</span>
+                            <span>삭제</span>
+                        </div>
+                        <ul>
+                            <li class="listBox">
+                                <input type="checkbox">
+                                <a href=""><img src="../img/cart ex img.png" alt=""></a>
+                                <span>[해피 레이니 데이즈 시리즈] 쿠로미 마스코트 커버 파우치</span>
+                                <a href=""><span>12500원</span></a>
+                                <span>1</span>
+                                <span>-</span>
+                                <span>2500원</span>
+                                <span>15000원</span>
+                                <a href="">삭제</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="order_button">
+                        <a href="">전체 상품 주문</a>
+                        <a href="">선택 상품 주문</a>
+                        <a href="">쇼핑 계속하기</a>
+                    </div>
+                </fieldset>
             </form>
 
             <h3>이용안내</h3>

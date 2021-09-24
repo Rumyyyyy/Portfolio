@@ -26,7 +26,8 @@ section.join_content form fieldset:nth-last-of-type(2) textarea,
 section.objects h2,
 section.objects ul li button,
 section.objects ul li a,
-section.cart_content form a{
+section.cart_content form a,
+section.cart_content form fieldset > div.delivery_object p{
     font-family: 'MaplestoryOTFLight';
     font-weight: 300;
     font-style: normal;
