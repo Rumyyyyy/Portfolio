@@ -224,6 +224,7 @@ section.cart_content form fieldset div.order_object ul li.listBox span{
 section.cart_content form fieldset div.order_object ul li.listBox a{
     width: 11.8%;
     float: left;
+    text-align: center;
 }
 section.cart_content form fieldset div.order_object ul li.listBox a > span{
     width: 100%;
