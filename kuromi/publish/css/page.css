@@ -189,31 +189,41 @@ section.cart_content form fieldset > p{
     color: #878589;
 }
 
-section.cart_content form fieldset div.order_object::after{
+section.cart_content form fieldset div.order_object div.listBox{
+    width: 100%;
+}
+section.cart_content form fieldset div.order_object .listBox::after{
     content: '';
     visibility: hidden;
     display: block;
     clear: both;
 }
 
-section.cart_content form fieldset div.order_object div.listBox{
-    width: 100%;
+section.cart_content form fieldset div.order_object .listBox input{
     float: left;
 }
 section.cart_content form fieldset div.order_object .listBox span{
-    display: inline-block;
+    float: left;
     width: 11.8%;
     color: #716d73;
     font-size: 16px;
     text-align: center;
     line-height: 40px;
 }
+
+section.cart_content form fieldset div.order_object ul li.listBox::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
 section.cart_content form fieldset div.order_object ul li.listBox span{
     color: #000;
 }
 section.cart_content form fieldset div.order_object ul li.listBox a{
-    display: inline-block;
     width: 11.8%;
+    float: left;
 }
 section.cart_content form fieldset div.order_object ul li.listBox a > span{
     width: 100%;
