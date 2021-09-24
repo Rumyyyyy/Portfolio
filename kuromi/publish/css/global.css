@@ -46,6 +46,8 @@ footer ul li strong a{
     font-style: normal;
 }
 
+.contentsWidth{max-width: 1360px; margin: 0 auto;}
+
 /* *class board */
 
 /* *class pager */
@@ -79,8 +81,6 @@ header > ul::after{
     clear: both;
 }
 header > ul{
-    max-width: 1360px;
-    margin: 0 auto;
     padding: 70px 0 80px;
 }
 
@@ -157,8 +157,6 @@ header nav ul::after{
     clear: both;
 }
 header nav ul{
-    max-width: 1360px;
-    margin: 0 auto;
     z-index: 100;
 }
 
@@ -253,7 +251,7 @@ footer{
 }
 
 footer ul{
-    max-width: 56.5%;
+    max-width: 1100px;
     margin: 0 auto;
 }
 footer ul::after{
