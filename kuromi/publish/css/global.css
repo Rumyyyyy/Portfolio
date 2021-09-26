@@ -32,7 +32,8 @@ section.cart_content form fieldset > p,
 div.order_object .listBox span,
 section.cart_content form fieldset div.order_object > p,
 section.cart_content form fieldset div.order_object > span,
-section.cart_content form fieldset div.order_object ul li.listBox a:last-of-type{
+section.cart_content form fieldset div.order_object ul li.listBox a:last-of-type,
+section.cart_content{
     font-family: 'MaplestoryOTFLight';
     font-weight: 300;
     font-style: normal;
