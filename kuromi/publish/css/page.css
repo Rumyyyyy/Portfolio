@@ -189,14 +189,41 @@ section.cart_content form fieldset > p{
     color: #878589;
 }
 
+section.cart_content form fieldset div.order_object{
+    position: relative;
+}
+
+section.cart_content form fieldset div.order_object > p{
+    background-color: #f3f1f1;
+    font-size: 14px;
+    color: #716d73;
+    border: 1px #c9c7ca solid;
+    box-sizing: border-box;
+    padding: 20px 15px;
+}
+
+section.cart_content form fieldset div.order_object > span{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    font-size: 14px;
+    color: #716d73;
+}
+
 section.cart_content form fieldset div.order_object div.listBox{
     width: 100%;
+    border-bottom: solid #c9c7ca 1px;
 }
 section.cart_content form fieldset div.order_object .listBox::after{
     content: '';
     visibility: hidden;
     display: block;
     clear: both;
+}
+
+section.cart_content form fieldset div.order_object div.listBox input[type='checkbox']{
+    vertical-align: middle;
+    /* 이거 가운데로 하는 거 모르겟다 */
 }
 
 section.cart_content form fieldset div.order_object .listBox input{

@@ -29,7 +29,9 @@ section.objects ul li a,
 section.cart_content form a,
 section.cart_content form fieldset > div.delivery_object p,
 section.cart_content form fieldset > p,
-div.order_object .listBox span{
+div.order_object .listBox span,
+section.cart_content form fieldset div.order_object > p,
+section.cart_content form fieldset div.order_object > span{
     font-family: 'MaplestoryOTFLight';
     font-weight: 300;
     font-style: normal;
