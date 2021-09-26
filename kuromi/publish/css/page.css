@@ -153,7 +153,6 @@ section.cart_content h2{
 
 section.cart_content form a{
     font-size: 12px;
-    display: inline-block;
 }
 
 section.cart_content form fieldset > div.delivery_object{
@@ -259,6 +258,11 @@ section.cart_content form fieldset div.order_object ul li.listBox a{
 section.cart_content form fieldset div.order_object ul li.listBox a:last-of-type{
     color: #000;
     font-size: 14px;
+    width: 9.5%;
+    line-height: 40px;
+    background-color: #c9c7ca;
+    margin: 62.5px 1.15%;
+    
 }
 
 section.cart_content form fieldset div.order_object ul li.listBox a > span{
@@ -267,7 +271,15 @@ section.cart_content form fieldset div.order_object ul li.listBox a > span{
     padding: 50px 0;
 }
 
+section.cart_content form fieldset > div.order_button::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
 section.cart_content form fieldset > div.order_button a{
+    float: left;
     width: 10.7%;
     height: 40px;
     color: #fff;
