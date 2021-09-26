@@ -248,13 +248,23 @@ section.cart_content form fieldset div.order_object ul li.listBox::after{
 section.cart_content form fieldset div.order_object ul li.listBox span{
     color: #000;
 }
+section.cart_content form fieldset div.order_object ul li.listBox > span{
+    line-height: 165px;
+}
 section.cart_content form fieldset div.order_object ul li.listBox a{
     width: 11.8%;
     float: left;
     text-align: center;
 }
+section.cart_content form fieldset div.order_object ul li.listBox a:last-of-type{
+    color: #000;
+    font-size: 14px;
+}
+
 section.cart_content form fieldset div.order_object ul li.listBox a > span{
     width: 100%;
+    line-height: 20px;
+    padding: 50px 0;
 }
 
 section.cart_content form fieldset > div.order_button a{
