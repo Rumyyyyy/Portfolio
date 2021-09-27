@@ -22,7 +22,13 @@
         });
 
         $(document).ready(function(){
-            $('.best_slider .slider').bxSlider();
+            $('.best_slider .slider').bxSlider({
+                minSlides:3,
+                maxSlides:3,
+                moveSlides:1,
+                slideMargin:0,
+                slideWidth:400,
+            });
         });
 
         $(document).ready(function(){
@@ -228,6 +234,7 @@
             <div class="best_slider">
                 <div class="slider">
                     <div>I am a slide.</div>
+                    <div>I am another slide.</div>
                     <div>I am another slide.</div>
                 </div>
             </div>

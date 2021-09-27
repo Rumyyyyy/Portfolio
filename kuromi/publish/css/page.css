@@ -48,6 +48,9 @@ div.mainSlider .bx-next:hover, .bx-wrapper .bx-next:focus{
 /* 배너 오른쪽 화살표가 자꾸 마우스 올리면 사라짐: 우선순위때문에 백그라운드에서 
 포지션이 안 먹어서 따로 잡아서 포지션 줌 */
 
+.best_slider{max-width: 1200px; margin: 0 auto;}
+
+
 
 /* ?main section */
 
