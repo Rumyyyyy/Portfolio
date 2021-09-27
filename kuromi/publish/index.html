@@ -13,13 +13,17 @@
     <script src="js/common.js"></script>
     <script>
       $(document).ready(function(){
-        $('.slider').bxSlider({
+        $('.mainSlider .slider').bxSlider({
             auto: true,
             pager: true,
             pause: 2500,
             autoHover: Boolean
         });
       });
+
+      $(document).ready(function(){
+    $('.best_slider .slider').bxSlider();
+    });
     </script> 
 </head>
 <body>
@@ -139,17 +143,19 @@
         </header>
 
         <!-- 슬라이더 추가 예정 -->
-        <div class="slider">
-            <div><img src="../img/banner img1.png" alt=""></div>
-            <div><img src="../img/banner img2.png" alt=""></div>
-            <div><img src="../img/banner img3.png" alt=""></div>
-            <div><img src="../img/banner img4.png" alt=""></div>
-            <div><img src="../img/banner img5.png" alt=""></div>
+        <div class="mainSlider">
+            <div class="slider">
+                <div><img src="../img/banner img1.png" alt=""></div>
+                <div><img src="../img/banner img2.png" alt=""></div>
+                <div><img src="../img/banner img3.png" alt=""></div>
+                <div><img src="../img/banner img4.png" alt=""></div>
+                <div><img src="../img/banner img5.png" alt=""></div>
+            </div>
         </div>
 
         <section class="main_content">
             <h2>Best</h2>
-            <div>
+            <!-- <div>
                 <a href="">&lt;</a>
                 <ul>
                     <li>
@@ -214,6 +220,12 @@
                     </li>
                 </ul>
                 <a href="">&gt;</a>
+            </div> -->
+            <div class="best_slider">
+                <div class="slider">
+                    <div>I am a slide.</div>
+                    <div>I am another slide.</div>
+                </div>
             </div>
         </section>
 
@@ -263,6 +275,7 @@
                         </a>
                     </li>
                 </ul>
+                <a href="">&gt;</a>
             </section> 
 
             <footer>

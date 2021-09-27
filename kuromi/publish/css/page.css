@@ -1,7 +1,6 @@
 /* ?slider */
 
-div.bx-wrapper{
-    height: 660px;
+div.mainSlider{
     margin-bottom: 105px;
     position: relative;
     border: 0;
@@ -10,27 +9,27 @@ div.bx-wrapper{
     border-bottom: 45px #e2d0f4 solid;
 }
 
-div.bx-wrapper .bx-prev{
+div.mainSlider .bx-prev{
     background: url('../../img/lt_.png') no-repeat center;
 }
 
-div.bx-wrapper .bx-controls-direction a{
+div.mainSlider .bx-controls-direction a{
     width: 30px;
     height: 70px;
     position: absolute;
     top: 50%;
 }
-div.bx-wrapper .bx-controls-direction a:first-of-type{
+div.mainSlider .bx-controls-direction a:first-of-type{
     left: 6.25%;
 }
-div.bx-wrapper .bx-controls-direction a:last-of-type{
+div.mainSlider .bx-controls-direction a:last-of-type{
     right: 6.25%;
 }
 
-div.bx-wrapper .bx-next{
+div.mainSlider .bx-next{
     background: url('../../img/gt_ .png') no-repeat center;
 }
-div.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus{
+div.mainSlider .bx-next:hover, .bx-wrapper .bx-next:focus{
     background-position: center;
 }
 /* 배너 오른쪽 화살표가 자꾸 마우스 올리면 사라짐: 우선순위때문에 백그라운드에서 
