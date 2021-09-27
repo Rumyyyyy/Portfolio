@@ -71,6 +71,10 @@ header > ul > li:last-child{
 글씨만 없애고 span한테 display블럭 줬는데도 같이 다 사라짐 이유를 ㅁ름
 현재 쌤은 답장 없음 ㅋ */
 
+header > ul > li > a{
+    font-weight: 700;
+}
+
 header > ul > li span{
     position: absolute;
     top: 0;

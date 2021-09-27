@@ -12,18 +12,22 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="js/common.js"></script>
     <script>
-      $(document).ready(function(){
-        $('.mainSlider .slider').bxSlider({
-            auto: true,
-            pager: true,
-            pause: 2500,
-            autoHover: Boolean
+        $(document).ready(function(){
+            $('.mainSlider .slider').bxSlider({
+                auto: true,
+                pager: true,
+                pause: 2500,
+                autoHover: Boolean
+            });
         });
-      });
 
-      $(document).ready(function(){
-    $('.best_slider .slider').bxSlider();
-    });
+        $(document).ready(function(){
+            $('.best_slider .slider').bxSlider();
+        });
+
+        $(document).ready(function(){
+            $('.new_slider .slider').bxSlider();
+        });
     </script> 
 </head>
 <body>
@@ -231,7 +235,7 @@
 
         <section class="main_content">
             <h2>New</h2>
-            <div>
+            <!-- <div>
                 <a href="">&lt;</a>
                 <ul>
                     <li>
@@ -275,7 +279,14 @@
                         </a>
                     </li>
                 </ul>
-                <a href="">&gt;</a>
+                <a href="">&gt;</a> -->
+                <div class="new_slider">
+                    <div class="slider">
+                        <div>I am a slide.</div>
+                        <div>I am another slide.</div>
+                    </div>
+                </div>
+            
             </section> 
 
             <footer>

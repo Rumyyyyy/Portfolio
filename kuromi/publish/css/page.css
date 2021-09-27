@@ -2,11 +2,25 @@
 
 div.mainSlider{
     margin-bottom: 105px;
+    /* height: 660px; */
     position: relative;
+    
+}
+
+div.mainSlider .bx-wrapper{
     border: 0;
     box-shadow: none;
     -webkit-box-shadow: none;
-    border-bottom: 45px #e2d0f4 solid;
+    /* border-bottom: 45px #e2d0f4 solid; */
+}
+
+div.mainSlider .bx-wrapper .bx-pager{
+    background-color: #e2d0f4;
+    padding-bottom: 20px;
+}
+
+div.mainSlider .slider > div{
+    line-height: 0;
 }
 
 div.mainSlider .bx-prev{
