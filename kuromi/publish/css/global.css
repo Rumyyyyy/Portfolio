@@ -1,16 +1,5 @@
 a{text-decoration: none;}
 
-/* *font bold */
-header > ul > li > a,
-header nav > ul li,
-section.main_content h2,
-footer ul li h3,
-footer ul li strong a{
-    font-family: 'MaplestoryOTFBold';
-    font-weight: 900;
-    font-style: normal;
-}
-
 .contentsWidth{max-width: 1360px; margin: 0 auto;}
 
 /* *class board */
@@ -89,6 +78,12 @@ header > ul li > a > span ~ div{
 header h1 ~ ul li a{
     color: #fff;
 }
+header h1 ~ ul li a:hover{
+    color: #878589;
+}
+header h1 ~ ul li a:hover span{
+    display: none;
+}
 header h1 ~ ul li a span{
     color: #c9c7ca;
 }
@@ -132,6 +127,10 @@ header nav ul{
 header nav.active ul::before{
     height: 200PX;
     border-bottom: solid 1px #c9c7ca;
+}
+
+header nav > ul li{
+    font-weight: 700;
 }
 
 header nav.active ul li ul{
@@ -233,6 +232,7 @@ footer ul li h3{
     font-size: 16px;
     color: #464348;
     margin-bottom: 30px;
+    font-weight: 700;
 }
 
 footer ul li strong{
@@ -243,6 +243,7 @@ footer ul li strong a{
     display: block;
     font-size: 16px;
     color: #000;
+    font-weight: 700;
 }
 
 footer ul li p{

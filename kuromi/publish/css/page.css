@@ -11,7 +11,6 @@ div.mainSlider .bx-wrapper{
     border: 0;
     box-shadow: none;
     -webkit-box-shadow: none;
-    /* border-bottom: 45px #e2d0f4 solid; */
 }
 
 div.mainSlider .bx-wrapper .bx-pager{
@@ -56,6 +55,7 @@ section.main_content h2{
     text-align: center;
     color: #d135ff;
     font-size: 48px;
+    font-weight: 700;
 }
 
 section.main_content div{
