@@ -30,8 +30,7 @@ section.cart_content form a,
 section.cart_content form fieldset > div.delivery_object p,
 section.cart_content form fieldset > p,
 div.order_object .listBox span,
-section.cart_content form fieldset div.order_object > p,
-section.cart_content form fieldset div.order_object > span,
+section.cart_content form fieldset div.order_object div.prizes_number,
 section.cart_content form fieldset div.order_object ul li.listBox a:last-of-type,
 section.cart_content h3,
 section.cart_content h4,
@@ -242,17 +241,11 @@ header nav > ul > li:hover ul li a:hover{
 
 
 
-/* !ul에 올려도 다 나옴 메뉴가 */
-
-
-
 /* ?footer */
 
 footer{
     /* padding-top: 70px; */
     padding: 70px 0;
-    margin-top: 160px;
-    /* 레이아웃 맞추려고 잠깐 넣은 마진임 */
     border-top: 1px #c9c7ca solid;
 }
 
