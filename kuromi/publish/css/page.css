@@ -51,7 +51,10 @@ div.mainSlider .bx-controls-direction .bx-next:hover, .bx-wrapper .bx-next:focus
     max-width: 1200px; 
     margin: 0 auto;
 }
-
+.new_slider{
+    margin: 0 auto;
+    max-width: 1200px;
+}
 
 
 /* ?main section */
@@ -61,10 +64,6 @@ section.main_content h2{
     color: #d135ff;
     font-size: 48px;
     font-weight: 700;
-}
-
-section.main_content div{
-    margin: 0 auto;
 }
 
 section.main_content div ul::after{
