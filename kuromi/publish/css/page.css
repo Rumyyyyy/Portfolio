@@ -1,5 +1,6 @@
 /* ?slider */
 
+/* *banner slider */
 div.mainSlider{
     margin-bottom: 105px;
     position: relative;
@@ -47,72 +48,95 @@ div.mainSlider .bx-controls-direction .bx-next:hover, .bx-wrapper .bx-next:focus
 /* 배너 오른쪽 화살표가 자꾸 마우스 올리면 사라짐: 우선순위때문에 백그라운드에서 
 포지션이 안 먹어서 따로 잡아서 포지션 줌 */
 
-.best_slider{
+/* *content slider */
+div.best_slider{
     max-width: 1200px; 
     margin: 0 auto;
 }
-.new_slider{
+
+div.best_slider .bx-wrapper{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+}
+
+div.best_slider .bx-wrapper .bx-pager{
+    display: none;
+}
+
+div.new_slider{
     margin: 0 auto;
     max-width: 1200px;
 }
 
+div.new_slider .bx-wrapper{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+}
+
+div.new_slider .bx-wrapper .bx-pager{
+    display: none;
+}
 
 /* ?main section */
+
+section.main_content:first-of-type{
+    margin-bottom: 100px;
+}
+section.main_content:nth-of-type(2){
+    margin-bottom: 160px;
+}
 
 section.main_content h2{
     text-align: center;
     color: #d135ff;
     font-size: 48px;
     font-weight: 700;
+    margin-bottom: 55px;
 }
-
-section.main_content div ul::after{
+section.main_content h2::after{
     content: '';
-    visibility: hidden;
     display: block;
-    clear: both;
-}
-section.main_content div ul{
-    max-width: 1200px;
-    margin: 0 auto;
+    height: 1px;
+    max-width: 155px;
+    background-color: #d135ff;  
+    margin: 0 auto; 
+    margin-top: 35px;
 }
 
-section.main_content div ul li{
+section.main_content div.objectArea{
     max-width: 345px;
-    float: left;
     text-align: center;
-    margin-right: 6.6%;
-}
-section.main_content div ul li:nth-of-type(3n){
-    margin: 0;
-}
-section.main_content:first-of-type div ul li:last-child{
-    margin-bottom: 110px;
-}
-section.main_content div ul li:nth-of-type(n + 4){
-    display: none;
-}
-/* 그 넘어가는 슬라이드 같이 만들 건데 3개 까지만 나와야대서 잠깐 지움 */
-
-section.main_content div ul li a img{
-    max-width: 345px;
+    width: 100%;
+    display: flex;
 }
 
-section.main_content div ul li  a span{
+section.main_content div.objectArea a span.material-icons{
     display: block;
     text-align: right;
     color: #716d73;
 }
 
-section.main_content div ul li a p{
+section.main_content div.objectArea a p{
     font-size: 18px;
-}
-section.main_content div ul li a p:first-of-type{
     color: #716d73;
-    line-height: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
-section.main_content div ul li a p:last-of-type{
+
+section.main_content div.objectArea a p span{
+    width: 100%;
+}
+
+section.main_content div.objectArea a b{
     color: #000;
+    margin-bottom: 25px;
+    font-size: 18px;
+    display: block;
 }
 
 
