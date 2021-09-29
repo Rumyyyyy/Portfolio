@@ -2,7 +2,6 @@
 
 div.mainSlider{
     margin-bottom: 105px;
-    /* height: 660px; */
     position: relative;
     
 }
@@ -39,16 +38,19 @@ div.mainSlider .bx-controls-direction a:last-of-type{
     right: 6.25%;
 }
 
-div.mainSlider .bx-next{
+div.mainSlider .bx-controls-direction .bx-next{
     background: url('../../img/gt_ .png') no-repeat center;
 }
-div.mainSlider .bx-next:hover, .bx-wrapper .bx-next:focus{
+div.mainSlider .bx-controls-direction .bx-next:hover, .bx-wrapper .bx-next:focus{
     background-position: center;
 }
 /* 배너 오른쪽 화살표가 자꾸 마우스 올리면 사라짐: 우선순위때문에 백그라운드에서 
 포지션이 안 먹어서 따로 잡아서 포지션 줌 */
 
-.best_slider{max-width: 1200px; margin: 0 auto;}
+.best_slider{
+    max-width: 1200px; 
+    margin: 0 auto;
+}
 
 
 

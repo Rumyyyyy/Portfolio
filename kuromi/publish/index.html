@@ -27,12 +27,18 @@
                 maxSlides:3,
                 moveSlides:1,
                 slideMargin:0,
-                slideWidth:400,
+                slideWidth:400
             });
         });
 
         $(document).ready(function(){
-            $('.new_slider .slider').bxSlider();
+            $('.new_slider .slider').bxSlider({
+                minSlides:3,
+                maxSlides:3,
+                moveSlides:1,
+                slideMargin:0,
+                slideWidth:400         
+            });
         });
     </script> 
 </head>
@@ -290,6 +296,7 @@
                 <div class="new_slider">
                     <div class="slider">
                         <div>I am a slide.</div>
+                        <div>I am another slide.</div>
                         <div>I am another slide.</div>
                     </div>
                 </div>
