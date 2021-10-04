@@ -4,4 +4,8 @@ $(document).ready(function(){
     },function(){
         $('div header > nav').removeClass('active')
     });
+
+    $(window).scroll(function(){
+        console.log(1)
+    })
 });

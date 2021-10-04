@@ -131,24 +131,27 @@ section.main_content h2{
     font-size: 48px;
     margin-bottom: 55px;
 }
+
 section.main_content h2 span{
     font-weight: 700;
+}
+section.main_content h2.active span{    
     animation-name: contentName;
     animation-duration: 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     opacity: 0.2;
 }
-section.main_content h2 span:nth-of-type(1){
+section.main_content h2.active span:nth-of-type(1){
     animation-delay: 0s;
 }
-section.main_content h2 span:nth-of-type(2){
+section.main_content h2.active span:nth-of-type(2){
     animation-delay: 0.3s;
 }
-section.main_content h2 span:nth-of-type(3){
+section.main_content h2.active span:nth-of-type(3){
     animation-delay: 0.6s;
 }
-section.main_content h2 span:nth-of-type(4){
+section.main_content h2.active span:nth-of-type(4){
     animation-delay: 0.9s;
 }
 section.main_content h2::after{
