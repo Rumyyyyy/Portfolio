@@ -468,6 +468,16 @@ section.cart_content form fieldset div.order_object ul li.listBox a > span{
     padding: 50px 0;
 }
 
+section.cart_content form fieldset div.order_object > p{
+    color: #646165;
+    font-size: 13px;
+    text-align: center;
+    margin: 85px 0;
+}
+section.cart_content form fieldset div.order_object ul + p{
+    display: none;
+}
+
 section.cart_content form fieldset > div.order_button{
     margin-bottom: 60px;
 }
