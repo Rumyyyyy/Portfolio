@@ -6,6 +6,11 @@ $(document).ready(function(){
     });
 
     $(window).scroll(function(){
-        console.log(1)
+        // console.log($('.main_content h2').offset().top)
+        console.log($(window).scrollTop())
+
+        if($('.main_content h2').offset().top < $(window).scrollTop()){
+            $('.main_content h2').addClass('active')
+        }
     })
 });
