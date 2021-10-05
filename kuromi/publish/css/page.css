@@ -617,6 +617,10 @@ section.cart_content > p:last-of-type{
 
 /* ?favor_object */
 
+section.favor_content{
+    margin-bottom: 230px;
+}
+
 section.favor_content h2{
     font-size: 36px;
     color: #878589;
@@ -634,6 +638,7 @@ section.favor_content form fieldset div.favor_list{
     display: flex;
     line-height: 40px;
     align-items: center;
+    border-bottom: 1px solid #c9c7ca;
 }
 
 section.favor_content form fieldset div.favor_list input{
@@ -649,6 +654,7 @@ section.favor_content form fieldset div.favor_list span{
 section.favor_content form fieldset ul{
     display: flex;
     align-items: center;
+    margin-bottom: 60px;
 }
 section.favor_content form fieldset ul::after{
     content: '';
@@ -666,7 +672,10 @@ section.favor_content form fieldset ul li{
     text-align: center;
     font-size: 16px;
     display: flex;
-    align-items: center;
+    align-items: center;    
+}
+section.favor_content form fieldset ul li:not(:last-of-type){
+    border-bottom: #c9c7ca solid 1px;
 }
 
 section.favor_content form fieldset ul li a{
@@ -694,6 +703,28 @@ section.favor_content form fieldset ul li span{
     width: 100%;
 }
 
+section.favor_content form > a{
+    background-color: #c9c7ca;
+    margin-left: 10px;
+    width: 10.7%;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    margin: 0 auto;
+} 
+
+section.favor_content form fieldset p{
+    color: #646165;
+    font-size: 13px;
+    text-align: center;
+    margin: 85px 0;
+}
+
+section.favor_content form fieldset ul + p{
+    display: none;
+}
 
 /* ?login */
 
