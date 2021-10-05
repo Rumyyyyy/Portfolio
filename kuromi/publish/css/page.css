@@ -253,7 +253,6 @@ div.list::after{
 div.list span{
     width: 13.5%;
     float: left;
-    display: block;
     line-height: 40px;
     font-size: 14px;
     color: #878589;
@@ -288,7 +287,6 @@ ul.board li a::after{
 
 ul.board li a span{
     width: 13.5%;
-    display: block;
     float: left;
 }
 ul.board li a span:first-of-type{
@@ -361,6 +359,21 @@ div.Announcement_content form input[type = 'submit']{
 
 
 /* ?question */
+
+
+section.question_content div.list span{
+    width: 90px;
+}
+section.question_content div.list span:nth-of-type(2){
+    width: 100px;
+}
+section.question_content div.list span:nth-of-type(3){
+    width: calc(100% - 280px);
+}
+
+section.question_content ul.board li a span{
+    width: 90px;
+}
 
 
 /* ?cart */
