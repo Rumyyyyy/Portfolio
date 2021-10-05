@@ -492,9 +492,6 @@ section.cart_content form fieldset div.order_object .listBox::after{
     clear: both;
 }
 
-section.cart_content form fieldset div.order_object .listBox input{
-    float: left;
-}
 section.cart_content form fieldset div.order_object .listBox span{
     float: left;
     width: 11.8%;
@@ -624,6 +621,29 @@ section.cart_content > p:last-of-type{
 section.favor_content h2{
     font-size: 36px;
     color: #878589;
+    text-align: center;
+}
+
+section.favor_content div.favor_list::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+section.favor_content div.favor_list{
+    display: flex;
+    line-height: 40px;
+    align-items: center;
+}
+
+section.favor_content div.favor_list input{
+    float: left;
+}
+
+section.favor_content div.favor_list span{
+    float: left;
+    width: 24.6%;
     text-align: center;
 }
 
