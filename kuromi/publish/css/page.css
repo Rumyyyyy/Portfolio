@@ -664,16 +664,29 @@ section.favor_content form fieldset ul li input{
 
 section.favor_content form fieldset ul li{
     width: 100%;
-    float: left;
     text-align: center;
+    font-size: 16px;
+}
+
+section.favor_content form fieldset ul li::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
 }
 
 section.favor_content form fieldset ul li a{
+    float: left;
     width: 24.6%;
+    display: block;
+}
+
+section.favor_content form fieldset ul li a img{
+    /* width: 100%; */
 }
 
 section.favor_content form fieldset ul li span{
-    width: 24.6%;
+    width: 100%;
 }
 
 
