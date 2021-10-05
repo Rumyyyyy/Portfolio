@@ -360,6 +360,28 @@ div.Announcement_content form input[type = 'submit']{
 
 /* ?question */
 
+section.question_content h2{
+    font-size: 36px;
+    color: #878589;
+    text-align: center;
+    margin-bottom: 10px;
+}
+section.question_content h2:after{
+    content: '';
+    width: 170px;
+    height: 1px;
+    background-color: #878589;
+    display: block;
+    margin: 10px auto 0;
+}
+
+section.question_content p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #878589;
+    margin-bottom: 85px;
+}
 
 section.question_content div.list span{
     width: 90px;
@@ -373,6 +395,12 @@ section.question_content div.list span:nth-of-type(3){
 
 section.question_content ul.board li a span{
     width: 90px;
+}
+section.question_content ul.board li a span:nth-of-type(2){
+    width: 100px;
+}
+section.question_content ul.board li a span:nth-of-type(3){
+    width: calc(100% - 280px);
 }
 
 
