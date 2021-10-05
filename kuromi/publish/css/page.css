@@ -530,8 +530,7 @@ section.cart_content form fieldset div.order_object ul li.listBox a:last-of-type
     width: 9.5%;
     line-height: 40px;
     background-color: #c9c7ca;
-    margin: 62.5px 1.15%;
-    
+    margin: 62.5px 1.15%;    
 }
 
 section.cart_content form fieldset div.order_object ul li.listBox a > span{
@@ -666,23 +665,29 @@ section.favor_content form fieldset ul li{
     width: 100%;
     text-align: center;
     font-size: 16px;
-}
-
-section.favor_content form fieldset ul li::after{
-    content: '';
-    visibility: hidden;
-    display: block;
-    clear: both;
+    display: flex;
+    align-items: center;
 }
 
 section.favor_content form fieldset ul li a{
-    float: left;
     width: 24.6%;
     display: block;
+    color: #000;
 }
-
-section.favor_content form fieldset ul li a img{
-    /* width: 100%; */
+section.favor_content form fieldset ul li a:nth-of-type(2){
+    padding: 62.5px 0;
+    line-height: 20px;
+}
+section.favor_content form fieldset ul li a:nth-last-of-type(2){
+    line-height: 165px;
+}
+section.favor_content form fieldset ul li a:last-of-type{
+    color: #000;
+    font-size: 14px;
+    width: 9.5%;
+    line-height: 40px;
+    background-color: #c9c7ca;
+    margin: 62.5px 7.5%;
 }
 
 section.favor_content form fieldset ul li span{
