@@ -618,6 +618,16 @@ section.cart_content > p:last-of-type{
     padding-bottom: 20px;
 }
 
+
+/* ?favor_object */
+
+section.favor_content h2{
+    font-size: 36px;
+    color: #878589;
+    text-align: center;
+}
+
+
 /* ?login */
 
 section.login_content h2{
