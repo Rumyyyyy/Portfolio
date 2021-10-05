@@ -624,27 +624,56 @@ section.favor_content h2{
     text-align: center;
 }
 
-section.favor_content div.favor_list::after{
+section.favor_content form fieldset div.favor_list::after{
     content: '';
     visibility: hidden;
     display: block;
     clear: both;
 }
 
-section.favor_content div.favor_list{
+section.favor_content form fieldset div.favor_list{
     display: flex;
     line-height: 40px;
     align-items: center;
 }
 
-section.favor_content div.favor_list input{
+section.favor_content form fieldset div.favor_list input{
     float: left;
 }
 
-section.favor_content div.favor_list span{
+section.favor_content form fieldset div.favor_list span{
     float: left;
     width: 24.6%;
     text-align: center;
+}
+
+section.favor_content form fieldset ul{
+    display: flex;
+    align-items: center;
+}
+section.favor_content form fieldset ul::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+section.favor_content form fieldset ul li input{
+    float: left;
+}
+
+section.favor_content form fieldset ul li{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+section.favor_content form fieldset ul li a{
+    width: 24.6%;
+}
+
+section.favor_content form fieldset ul li span{
+    width: 24.6%;
 }
 
 
