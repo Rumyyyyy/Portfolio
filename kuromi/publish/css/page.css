@@ -116,6 +116,7 @@ div.new_slider .bx-wrapper div.bx-controls-direction a{
     margin-top: -30px;
 }
 
+
 /* ?main section */
 
 section.main_content:first-of-type{
@@ -726,6 +727,7 @@ section.favor_content form fieldset ul + p{
     display: none;
 }
 
+
 /* ?login */
 
 section.login_content h2{
@@ -1067,6 +1069,7 @@ section.join_content hr{
 }
 /* todo. 회원가입은 선택자 연습하면서 해보기 */
 
+
 /* ?object */
 
 section.objects h2{
@@ -1149,8 +1152,6 @@ section.objects ul.list_item li a b{
     color: #000;
 }
 
-/* todo. 리스트 디테일 페이지 */
-/* todo. 회원가입 마무리 해보기 */
 
 /* ?things */
 
@@ -1170,4 +1171,47 @@ section.thing figure figcaption{
 
 section.thing figure figcaption a{
     width: 100%;
+}
+
+
+/* ?my_page */
+
+div.mypage_content{
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+div.mypage_content > strong{
+    display: block;
+    color: #878589;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+div.mypage_content > strong::after{
+    content: '';
+    display: block;
+    width: 205px;
+    height: 1px;
+    margin: 0 auto 95px;
+    background-color: #878589;
+}
+
+div.mypage_content ul.myPoint{
+    height: 130px;
+    border: 1px solid #c9c7ca;
+    padding: 10px 70px 10px 20px;
+}
+
+div.mypage_content ul.myPoint li{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    line-height: 30px;
+}
+div.mypage_content ul.myPoint li:first-of-type{
+    margin-bottom: 10px;
+}
+div.mypage_content ul.myPoint li:nth-of-type(2){
+    margin-bottom: 10px;
 }
