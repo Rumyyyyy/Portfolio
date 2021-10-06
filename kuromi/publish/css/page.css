@@ -845,7 +845,7 @@ section.join_content form fieldset:nth-of-type(4){
 section.join_content form fieldset:nth-of-type(5){
     margin-bottom: 20px;
 }
-section.join_content form fieldset:nth-of-type(6){}
+/* section.join_content form fieldset:nth-of-type(6){} */
 
 section.join_content form fieldset legend{
     color: #000;
@@ -1173,45 +1173,211 @@ section.thing figure figcaption a{
     width: 100%;
 }
 
+section.thing figure figcaption > strong:first-of-type{
+    font-size: 30px;
+    color: #555159;
+}
+
+section.thing > div{
+    text-align: center;
+}
+
 
 /* ?my_page */
 
 div.mypage_content{
     text-align: center;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 0 auto 100px;
+}
+div.mypage_content::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
 }
 
 div.mypage_content > strong{
     display: block;
     color: #878589;
     font-size: 36px;
-    margin-bottom: 10px;
 }
 div.mypage_content > strong::after{
     content: '';
     display: block;
     width: 205px;
     height: 1px;
-    margin: 0 auto 95px;
+    margin: 10px auto 95px;
     background-color: #878589;
 }
 
 div.mypage_content ul.myPoint{
-    height: 130px;
+    float: left;
+    width: 50%;
     border: 1px solid #c9c7ca;
-    padding: 10px 70px 10px 20px;
+    padding: 10px 40px 10px 20px;
+    box-sizing: border-box;
 }
 
 div.mypage_content ul.myPoint li{
+    line-height: 30px;
+    font-size: 14px;
+    color: #878589;
+    display: flex;
+    justify-content: space-between;
+}
+div.mypage_content ul.myPoint li:not(:last-of-type){
+    margin-bottom: 10px;
+}
+
+div.mypage_content ul.myPoint li a{
+    width: 50px;
+    font-size: 14px;
+    color: #000;
+    border: 1px solid #c9c7ca;
+    line-height: 20px;
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+div.mypage_content ul.totalPoint{
+    float: left;
+    width: 50%;
+    border: 1px solid #c9c7ca;
+    border-left: none;
+    box-sizing: border-box;
+    padding: 10px 70px 10px 20px;
+    margin-bottom: 70px;
+}
+
+div.mypage_content ul.totalPoint li{
+    line-height: 30px;
+    font-size: 14px;
+    color: #878589;
+    display: flex;
+    justify-content: space-between;
+}
+div.mypage_content ul.totalPoint li:first-of-type{
+    margin-bottom: 50px;
+}
+
+div.mypage_content section.my_order{
+    border: 1px solid #c9c7ca;
+    box-sizing: border-box;
+    clear: both;
+    padding-bottom: 25px;
+    margin-bottom: 100px;
+}
+div.mypage_content section.my_order::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+div.mypage_content section.my_order h2{
+    font-size: 18px;
+    text-align: left;
+    color: #000;
+    background-color: #e4e3e4;
+    line-height: 40px;
+    border-bottom: 1px solid #c9c7ca;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+div.mypage_content section.my_order > span{
+    width: 25%;
+    float: left;
+    border-right: 1px solid #c9c7ca;
+    box-sizing: border-box;
+}
+
+div.mypage_content section.my_order span p{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+div.mypage_content section.my_order span p:nth-of-type(1){
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+div.mypage_content section.my_order span p:nth-of-type(2){
+    font-size: 14px;
+}
+
+div.mypage_content section.my_order div{
+    float: left;
+    width: 25%;
+}
+
+div.mypage_content section.my_order div span{
+    font-weight: 700;
+    font-size: 12px;
+    float: left;
     width: 50%;
-    line-height: 30px;
 }
-div.mypage_content ul.myPoint li:first-of-type{
+div.mypage_content section.my_order div span:nth-of-type(n + 1){
+    text-align: left;
+}
+div.mypage_content section.my_order div span:nth-of-type(2n + 1){
+    text-align: right;
+}
+div.mypage_content section.my_order div span:nth-of-type(1){
+    margin-bottom: 20px;
+}
+div.mypage_content section.my_order div span:nth-of-type(2){
+    margin-bottom: 20px;
+}
+
+div.mypage_content ul.mypageList::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+div.mypage_content ul.mypageList li{
+    float: left;
+    border: 1px solid #c9c7ca;
+    box-sizing: border-box;
+    width: 24%;
+    padding: 105px 0 50px;
+}
+div.mypage_content ul.mypageList li:nth-of-type(1){
+    background: url('../../img/order\ img.png') no-repeat center top 40px;
+}
+div.mypage_content ul.mypageList li:nth-of-type(2){
+    background: url('../../img/profile\ img.png') no-repeat center top 40px;
+}
+div.mypage_content ul.mypageList li:nth-of-type(3){
+    background: url('../../img/wishlist\ img.png') no-repeat center top 40px;
+}
+div.mypage_content ul.mypageList li:nth-of-type(4){
+    background: url('../../img/mileage\ img.png') no-repeat center top 40px;
+}
+div.mypage_content ul.mypageList li:not(:last-of-type){
+    margin-right: 18px;
+}
+
+div.mypage_content ul.mypageList li strong{
+    display: block;
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
     margin-bottom: 10px;
 }
-div.mypage_content ul.myPoint li:nth-of-type(2){
-    margin-bottom: 10px;
+
+div.mypage_content ul.mypageList li p{
+    font-size: 12px;
+}
+div.mypage_content ul.mypageList li p:first-of-type{
+    color: #000;
+    margin-bottom: 25px;
+}
+div.mypage_content ul.mypageList li p:nth-of-type(2){
+    color: #4d4d4d;
+    line-height: 16px;
 }
