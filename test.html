@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{counter-increment: test;}
+        li strong::before{content:'제' counter(test) '조';}
+    </style>
+</head>
+<body>
+    <ul>
+        <li><strong></strong></li>
+        <li><strong></strong></li>
+        <li><strong></strong></li>
+        <li><strong></strong></li>
+        <li><strong></strong></li>
+        <li></li>
+        <li><strong></strong></li>
+        <li><strong></strong></li>
+        <li><strong></strong></li>
+        <li><strong></strong></li>
+        <li><strong></strong></li>
+    </ul>
+</body>
+</html>
