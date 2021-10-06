@@ -1164,9 +1164,12 @@ section.thing h2{
     display: none;
 }
 
-section.thing figure figcaption{
+section.thing figure{
     display: flex;
-    flex-wrap: wrap;
+}
+
+section.thing figure figcaption{
+    
 }
 
 section.thing figure figcaption a{
@@ -1174,13 +1177,67 @@ section.thing figure figcaption a{
 }
 
 section.thing figure figcaption > strong:first-of-type{
+    display: block;
+    margin-top: 80px;
     font-size: 30px;
     color: #555159;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #c9c7ca;
+}
+
+section.thing figure figcaption > span::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+section.thing figure figcaption > span > strong{
+    font-size: 24px;
+    color: #878589;
+    float: left;
+    margin-right: 27%;
+}
+
+section.thing figure figcaption > span > span{
+    font-size: 18px;
+    color: #c9c7ca;
+    float: left;
+    margin-right: 30%;
+}
+
+section.thing figure figcaption > span > strong + span{
+    float: left;
+    font-size: 24px;
+    color: #878589;
+    margin-bottom: 30px;
+}
+
+section.thing figure figcaption > span > p{
+    font-size: 18px;
+    color: #c9c7ca;
+    float: left;
+}
+
+section.thing figure figcaption > div{
+    font-size: 17px;
+    color: #555159;
+}
+
+section.thing figure figcaption > div > span{
+    font-weight: 700;
+}
+
+section.thing figure figcaption > div input{
+    width: 40px;
+    border: 1px #c9c7ca solid;
 }
 
 section.thing > div{
     text-align: center;
 }
+
 
 
 /* ?my_page */
