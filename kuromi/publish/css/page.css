@@ -1192,12 +1192,11 @@ section.thing figure{
     display: flex;
 }
 
-section.thing figure figcaption{
-    
-}
-
-section.thing figure figcaption a{
-    width: 100%;
+section.thing figure figcaption::after{
+    content: '';
+    visibility: hidden;
+    display: block;
+    clear: both;
 }
 
 section.thing figure figcaption > strong:first-of-type{
@@ -1250,34 +1249,110 @@ section.thing figure figcaption > span > p{
     float: left;
 }
 
-section.thing figure figcaption > div{
+section.thing figure figcaption > div:first-of-type{
     font-size: 17px;
     color: #555159;
     border-bottom: 1px solid #c9c7ca;
+    margin-bottom: 55px;
 }
 
-section.thing figure figcaption > div strong{
+section.thing figure figcaption > div:first-of-type strong{
     line-height: 50px;
     margin-right: 8%;
 }
 
-section.thing figure figcaption > div input{
+section.thing figure figcaption > div:first-of-type input{
     width: 40px;
     border: 1px #c9c7ca solid;
     margin-right: 20%;
     vertical-align: middle;
 }
 
-section.thing figure figcaption > div > span{
+section.thing figure figcaption > div:first-of-type > span{
     font-weight: 700;
     text-align: right;
+}
+
+section.thing figure figcaption > div:nth-of-type(2){
+    color: #555159;
+    float: right;
+    margin-bottom: 95px;
+}
+
+section.thing figure figcaption > div:nth-of-type(2) b{
+    font-size: 17px;
+}
+
+section.thing figure figcaption > div:nth-of-type(2) strong{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+section.thing figure figcaption > a{
+    display: block;
+    width: 31%;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    color: #555159;
+}
+section.thing figure figcaption > a:first-of-type{
+    clear: both;
+    background-color: #e2d0f4;
+}
+section.thing figure figcaption > a:not(:last-of-type){
+    margin-right: 15px;
+}
+section.thing figure figcaption > a:not(:first-of-type){
+    border: 1px solid #c9c7ca;
+    box-sizing: border-box;
 }
 
 section.thing > div{
     text-align: center;
 }
 
+section.thing > div img:last-of-type{
+    margin-bottom: 80px;
+}
 
+section.thing > ul{
+    max-width: 600px;
+    margin: 0 auto 100px;
+    border-top: 2px solid #c9c7ca;
+    border-bottom: 2px solid #c9c7ca;
+}
+
+section.thing > ul li{
+    font-size: 12px;
+    display: flex;
+}
+
+section.thing > ul li p{
+    font-weight: 700;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+section.thing > ul li p:first-of-type{
+    width: 21%;
+    background-color: #f3f1f4;
+}
+section.thing > ul li p:nth-of-type(2){
+    color: #555159;
+    width: 79%;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+section.thing > p{
+    max-width: 500px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 12px;
+    color: #555159;
+    margin-bottom: 90px;
+}
 
 /* ?my_page */
 
